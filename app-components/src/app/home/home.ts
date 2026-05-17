@@ -1,9 +1,12 @@
 import { Component } from "@angular/core";
+import { List } from "./list/list";
 
 @Component({
     selector: "app-home",
-    template: "<h2>Home CursosDev</h2>"
+    templateUrl: "./home.html",
+    styleUrl: "./home.scss",
+    imports: [List]
 })
 export class Home {
-
+    public title = "Cursos Dev"
 }

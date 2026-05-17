@@ -1,0 +1,21 @@
+@for(user of users; track user){
+    <app-user-detail [user]="user" (onUserSelected)="handleUserSelected($event)"></app-user-detail>
+}
+
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(user of users; track user){
+            <tr>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        }
+    </tbody>
+</table> -->
