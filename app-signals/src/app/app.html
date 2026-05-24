@@ -1,0 +1,28 @@
+<ul>
+  <li>Operator1: {{operator1()}}</li>
+  <li>Operator2: {{operator2()}}</li>
+  <li>Sum: {{sum()}}</li>
+</ul>
+
+<button (click)="incrementOperator1()">Increment Operator1</button>
+<button (click)="incrementOperator2()">Increment Operator2</button>
+
+<hr>
+<h2>User: {{user()}}</h2>
+<button (click)="getInfoUser(user())" disabled>Get Info User</button>
+<button (click)="changeUser()">Change User</button>
+
+<div>
+  <h3>Id: {{userInfo()?.id}}</h3>
+  <h3>Name: {{userInfo()?.name}}</h3>
+  <h3>Username: {{userInfo()?.username}}</h3>
+  <h3>Email: {{userInfo()?.email}}</h3>
+</div>
+
+<hr>
+<h1>Taxi Fare</h1>
+<h2>Fare: {{fare()}}</h2>
+<h2>Tax: {{tax()}}</h2>
+<h2>Total: {{total()}}</h2>
+<button (click)="newFare()">New Fare</button>
+<button (click)="increaseFare()">Increase Fare</button>
