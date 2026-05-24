@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { PageLogin } from './features/auth/ui/pages/page-login/page-login';
 
 @Component({
   selector: 'cdev-root',
-  imports: [RouterOutlet],
+  imports: [PageLogin],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('backoffice');
+  
 }
