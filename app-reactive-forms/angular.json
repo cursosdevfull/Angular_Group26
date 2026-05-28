@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "app-template-forms": {
+    "app-reactive-forms": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app-template-forms:build:production"
+              "buildTarget": "app-reactive-forms:build:production"
             },
             "development": {
-              "buildTarget": "app-template-forms:build:development"
+              "buildTarget": "app-reactive-forms:build:development"
             }
           },
           "defaultConfiguration": "development"

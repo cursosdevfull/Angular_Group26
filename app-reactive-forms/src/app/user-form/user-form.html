@@ -1,0 +1,30 @@
+<form [formGroup]="fg">
+    <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" formControlName="name">
+        <app-error-message [control]="fg!.get('name')"></app-error-message>
+    </div>
+    <div class="field">
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname" formControlName="lastname">
+        <app-error-message [control]="fg!.get('lastname')"></app-error-message>
+    </div>
+    <div class=" field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" formControlName="email">
+        <app-error-message [control]="fg!.get('email')"></app-error-message>
+    </div>
+    <div class="field">
+        <label for="age">Edad</label>
+        <input type="number" name="age" id="age" formControlName="age">
+        <app-error-message [control]="fg!.get('age')"></app-error-message>
+    </div>
+    <div class="field"><label for="gender"></label>
+        <select name="gender" id="gender" formControlName="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <button type="button" (click)="onSubmit()">Submit</button>
+    <app-error-message [control]="fg!"></app-error-message>
+</form>
