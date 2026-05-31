@@ -1,0 +1,6 @@
+@let messages = getErrorMessages();
+@if(messages.length > 0) {
+@for(message of messages; track message.kind){
+<span class="error">{{ message.message }}</span>
+}
+}
