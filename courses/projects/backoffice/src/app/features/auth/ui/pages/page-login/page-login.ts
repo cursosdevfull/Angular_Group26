@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { Login } from '../../views/login/login';
+import { TOKEN_AUTH_APPLICATION } from '@backoffice/features/auth';
+import { PORT_AUTH_APPLICATION } from '@backoffice/features/auth/domain/ports';
+import { Auth } from '@backoffice/features/auth/domain';
 
 @Component({
   selector: 'cdev-page-login',
@@ -8,7 +11,9 @@ import { Login } from '../../views/login/login';
   styleUrl: './page-login.scss',
 })
 export class PageLogin {
-  handleLogin(credentials: { email: string; password: string }) {
-    alert(`Login attempted with email: ${credentials.email} and password: ${credentials.password}`);
+  constructor(@Inject(TOKEN_AUTH_APPLICATION) private auth: PORT_AUTH_APPLICATION) { }
+
+  handleLogin(credentials: Auth) {
+    this.auth.login(credentials);
   }
 }

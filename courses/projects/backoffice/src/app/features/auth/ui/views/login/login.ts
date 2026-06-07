@@ -1,7 +1,12 @@
 import { Component, output, signal } from '@angular/core';
-import { TAUTH } from '@backoffice/features/auth/domain';
+import { Auth } from '@backoffice/features/auth/domain';
 import { email, form, FormField, required, requiredError, validate } from '@angular/forms/signals';
 import { ErrorMessage } from 'lib';
+
+interface IAuth {
+  email: string;
+  password: string;
+}
 
 @Component({
   selector: 'cdev-login',
@@ -10,14 +15,14 @@ import { ErrorMessage } from 'lib';
   styleUrl: './login.scss',
 })
 export class Login {
-  onLogin = output<TAUTH>();
+  onLogin = output<Auth>();
 
-  initialData: TAUTH = {
+  initialData = {
     email: '',
     password: ''
   }
 
-  loginModel = signal<TAUTH>(this.initialData);
+  loginModel = signal<IAuth>(this.initialData);
 
   loginForm = form(this.loginModel, schema => {
     required(schema.email, { message: 'Email is required' });
@@ -31,7 +36,8 @@ export class Login {
   login() {
     if (this.loginForm().valid()) {
       const { email, password } = this.loginForm().value();
-      this.onLogin.emit({ email, password });
+      const credentials = new Auth(email, password);
+      this.onLogin.emit(credentials);
     } else {
       this.loginForm.email().markAsTouched();
       this.loginForm.password().markAsTouched();
