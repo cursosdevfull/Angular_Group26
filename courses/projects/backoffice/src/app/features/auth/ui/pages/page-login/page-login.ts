@@ -14,6 +14,14 @@ export class PageLogin {
   constructor(@Inject(TOKEN_AUTH_APPLICATION) private auth: PORT_AUTH_APPLICATION) { }
 
   handleLogin(credentials: Auth) {
-    this.auth.login(credentials);
+    this.auth.login(credentials).subscribe({
+      next: (response) => {
+        if ("access_token" in response) {
+          alert(`Login successful! Access Token: ${response.access_token}, Refresh Token: ${response.refresh_token}`);
+        } else {
+          alert(`Login failed! Response: ${JSON.stringify(response)}`);
+        }
+      }
+    })
   }
 }
