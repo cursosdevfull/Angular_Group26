@@ -1,0 +1,22 @@
+.menu {
+    text-align: center;
+    background: linear-gradient(white 90%, rgb(189, 187, 187));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+
+    a {
+        display: inline-block;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+
+        &:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    }
+}

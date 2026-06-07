@@ -1,0 +1,7 @@
+<h2>{{ title }}</h2>
+<p>{{ description }}</p>
+<span>Roles allowed: {{ rolesAllowed.join(', ') }}</span>
+<hr>
+<p>Start Date: {{ startDate }}</p>
+<p>End Date: {{ endDate }}</p>
+<button (click)="loadNewParameters()">Load New Parameters</button>
