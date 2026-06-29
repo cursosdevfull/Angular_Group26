@@ -2,6 +2,9 @@ import { Component, output, signal } from '@angular/core';
 import { Auth } from '@backoffice/features/auth/domain';
 import { email, form, FormField, required, requiredError, validate } from '@angular/forms/signals';
 import { ErrorMessage } from 'lib';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 interface IAuth {
   email: string;
@@ -10,7 +13,7 @@ interface IAuth {
 
 @Component({
   selector: 'cdev-login',
-  imports: [FormField, ErrorMessage],
+  imports: [FormField, ErrorMessage, MatButtonModule, MatFormFieldModule, MatInputModule],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })

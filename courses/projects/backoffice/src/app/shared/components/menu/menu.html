@@ -1,0 +1,6 @@
+@for(item of itemsMenu; track item) {
+<a routerLink="{{item.link}}" routerLinkActive="active">
+    <mat-icon>{{item.icon}}</mat-icon>
+    <p>{{item.title}}</p>
+</a>
+}

@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <h1>Backoffice</h1>
+  <button matButton class="user-menu-trigger" [matMenuTriggerFor]="menu">
+    <div class="user-info">
+      <div class="user-avatar">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div class="user-details">
+        <span class="username">Sergio Hidalgo</span>
+        <span class="user-role">Administrator</span>
+      </div>
+      <mat-icon class="dropdown-icon">keyboard_arrow_down</mat-icon>
+    </div>
+  </button>
+</mat-toolbar>
+<mat-menu #menu="matMenu" class="user-menu" xPosition="before">
+  <button mat-menu-item class="lock-item">
+    <mat-icon>lock_outline</mat-icon>
+    <span>Bloquear pantalla</span>
+  </button>
+  <button mat-menu-item class="logout-item">
+    <mat-icon>logout</mat-icon>
+    <span>Cerrar sesión</span>
+  </button>
+</mat-menu>

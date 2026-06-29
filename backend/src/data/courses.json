@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Angular Fundamentals",
+    "description": "Learn the basics of Angular including components, services, and routing",
+    "price": 49.99,
+    "createdAt": "2025-01-15T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Advanced Angular Patterns",
+    "description": "Deep dive into RxJS, state management, and performance optimization",
+    "price": 79.99,
+    "createdAt": "2025-02-20T14:30:00Z"
+  },
+  {
+    "id": "3",
+    "name": "Node.js Backend with Express",
+    "description": "Build RESTful APIs with Node.js, Express, and JWT authentication",
+    "price": 59.99,
+    "createdAt": "2025-03-10T09:00:00Z"
+  },
+  {
+    "id": "4",
+    "name": "Full-Stack Development",
+    "description": "Combine Angular frontend with Node.js backend for complete apps",
+    "price": 99.99,
+    "createdAt": "2025-04-05T11:15:00Z"
+  }
+]

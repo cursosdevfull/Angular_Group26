@@ -1,16 +1,14 @@
-<form class="login-form" autocomplete="off">
-    <h1 class="login-title">Iniciar sesión</h1>
-    <div class="md3-textfield login-field">
-        <input type="email" id="email" placeholder=" " [formField]="loginForm.email" />
-        <label for="email">Correo electrónico</label>
+<form autocomplete="off">
+    <h1>Credenciales</h1>
+        <mat-form-field>
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput type="email" [formField]="loginForm.email" />
+        </mat-form-field>
         <cdev-lib-error-message [control]="loginForm.email()"></cdev-lib-error-message>
-        <span class="md3-line"></span>
-    </div>
-    <div class="md3-textfield login-field">
-        <input type="password" id="password" placeholder=" " [formField]="loginForm.password" />
-        <label for="password">Contraseña</label>
+        <mat-form-field>
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" [formField]="loginForm.password" />
+        </mat-form-field>
         <cdev-lib-error-message [control]="loginForm.password()"></cdev-lib-error-message>
-        <span class="md3-line"></span>
-    </div>
-    <button class="md3-btn login-btn" type="button" (click)="login()">Iniciar sesión</button>
+     <button matButton="filled" type="button" (click)="login()">Iniciar sesión</button>
 </form>

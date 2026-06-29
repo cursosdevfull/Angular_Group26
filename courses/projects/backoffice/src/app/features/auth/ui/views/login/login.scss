@@ -1,126 +1,13 @@
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	width: 100vw;
-}
-
-.login-form {
+form {
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	max-width: 380px;
-	min-width: 300px;
-	gap: 2rem;
-	background: none;
-	margin: auto;
-	height: auto;
-}
-.login-form {
-	width: 100%;
-	max-width: 380px;
-	min-width: 300px;
-	padding: 2.5rem 2.5rem 2rem 2.5rem;
-	border: 1.5px solid #e0e0e0;
-	border-radius: 1.25rem;
-	box-shadow: 0 2px 16px rgba(60,60,60,0.10);
-	background: rgba(255,255,255,0.85);
-	margin: auto;
-}
+	min-width: 400px;
 
-.login-title {
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: 2.2rem;
-	font-weight: 600;
-	color: #1a1a1a;
-	margin-bottom: 1.5rem;
-}
-
-.login-field {
-	width: 320px;
-	max-width: 90vw;
-	position: relative;
-	margin-bottom: 1.5rem;
-}
-
-// Material 3 Textfield
-.md3-textfield {
-	position: relative;
-	margin-top: 1.5rem;
-}
-.md3-textfield input {
-	width: 100%;
-	border: none;
-	border-bottom: 2px solid #bdbdbd;
-	outline: none;
-	font-size: 1.1rem;
-	background: transparent;
-	padding: 1.2rem 0 0.5rem 0;
-	transition: border-color 0.2s;
-}
-.md3-textfield input:focus {
-	border-bottom: 2px solid #6750a4;
-}
-.md3-textfield label {
-	position: absolute;
-	left: 0;
-	top: 1.2rem;
-	color: #757575;
-	font-size: 1rem;
-	pointer-events: none;
-	transition: 0.2s cubic-bezier(.4,0,.2,1);
-	background: transparent;
-}
-.md3-textfield input:focus + label,
-.md3-textfield input:not(:placeholder-shown) + label {
-	top: -0.7rem;
-	left: 0;
-	font-size: 0.85rem;
-	color: #6750a4;
-	background: #fff;
-	padding: 0 0.2rem;
-}
-.md3-line {
-	display: block;
-	height: 2px;
-	width: 100%;
-	background: #6750a4;
-	opacity: 0;
-	transition: opacity 0.2s;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-.md3-textfield input:focus ~ .md3-line {
-	opacity: 1;
-}
-
-// Material 3 Button
-.md3-btn {
-	width: 320px;
-	max-width: 90vw;
-	font-size: 1.1rem;
-	padding: 0.75rem 0;
-	background: #6750a4;
-	color: #fff;
-	border: none;
-	border-radius: 0.5rem;
-	box-shadow: 0 2px 8px rgba(103,80,164,0.08);
-	font-weight: 500;
-	letter-spacing: 0.03em;
-	cursor: pointer;
-	transition: background 0.2s, box-shadow 0.2s;
-}
-.md3-btn:hover, .md3-btn:focus {
-	background: #4f378b;
-	box-shadow: 0 4px 16px rgba(103,80,164,0.16);
+	h1 {
+		margin: 20px 0 40px 0;
+		text-align: center;
+	}
 }

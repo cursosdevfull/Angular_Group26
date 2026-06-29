@@ -1,0 +1,17 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 101px;
+}
+
+mat-card {
+  box-sizing: border-box;
+  margin: 20px 20px;
+  padding: 10px 20px 20px 20px;
+  background-color: #fff;
+  height: calc(100vh - 64px - 20px - 20px);
+}

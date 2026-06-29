@@ -1,3 +1,4 @@
-<div class="container">
-<cdev-page-login></cdev-page-login>
-</div>
+<router-outlet></router-outlet>
+@if (loading()) {
+  <cdev-lib-loader></cdev-lib-loader>
+}

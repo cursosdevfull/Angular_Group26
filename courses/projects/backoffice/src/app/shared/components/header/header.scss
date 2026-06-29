@@ -1,0 +1,198 @@
+$color-link-menu-hover: #145388;
+$background-menu-main: $color-link-menu-hover;
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+.user-menu-trigger {
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+
+  mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.2;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
+}
+
+.dropdown-icon {
+  font-size: 20px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.user-menu-trigger[aria-expanded='true'] .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+// Estilos para el mat-menu
+::ng-deep .user-menu {
+  .mat-mdc-menu-panel {
+    min-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+  }
+
+  .mat-mdc-menu-content {
+    padding: 0;
+  }
+
+  .menu-header {
+    padding: 20px;
+    /*background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    background-color: $background-menu-main;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .menu-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      mat-icon {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .menu-user-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      .menu-username {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .menu-role {
+        font-size: 13px;
+        opacity: 0.9;
+      }
+
+      .menu-email {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .mat-mdc-menu-item {
+    height: 48px !important;
+    padding: 0 20px !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease;
+    border-radius: 0 !important;
+
+    &:hover {
+      background-color: #f8f9fa !important;
+    }
+
+    mat-icon {
+      margin-right: 16px;
+      color: #666;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.profile-item:hover {
+      mat-icon {
+        color: $color-link-menu-hover;
+      }
+      span {
+        color: $color-link-menu-hover;
+      }
+    }
+
+    &.lock-item:hover {
+      mat-icon {
+        color: $color-link-menu-hover;
+      }
+      span {
+        color: $color-link-menu-hover;
+      }
+    }
+
+    &.logout-item {
+      color: #f44336 !important;
+
+      &:hover {
+        background-color: #ffebee !important;
+      }
+
+      mat-icon {
+        color: #f44336 !important;
+      }
+    }
+  }
+
+  .mat-mdc-menu-divider {
+    margin: 8px 0;
+    border-top-color: #e1e1e1;
+  }
+}
