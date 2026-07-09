@@ -4,6 +4,7 @@ const env = require("./config/env");
 const authenticate = require("./middleware/auth");
 const authRoutes = require("./routes/auth");
 const coursesRoutes = require("./routes/courses");
+const schedulesRoutes = require("./routes/schedules");
 const rolesRoutes = require("./routes/roles");
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json());
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", authenticate, coursesRoutes);
+app.use("/api/schedules", authenticate, schedulesRoutes);
 app.use("/api/roles", authenticate, rolesRoutes);
 
 // Health check

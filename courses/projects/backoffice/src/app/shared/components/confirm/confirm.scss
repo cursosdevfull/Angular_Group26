@@ -1,0 +1,21 @@
+$primary-color: #3b82f6;
+$fontSizeTitle: 18px;
+$fontSizeMessage: 15px;
+
+mat-toolbar {
+  background-color: $primary-color;
+}
+
+h2 {
+  font-size: $fontSizeTitle;
+}
+
+h3 {
+  font-size: $fontSizeMessage !important;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

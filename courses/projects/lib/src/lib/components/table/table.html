@@ -1,20 +1,28 @@
 @let ds = dataSource();
 @let dc = displayedColumns();
-@if (ds && dc) {
+
+<ng-content></ng-content>
+<cdev-lib-scrollbars [customStyle]="'height: 85%;'">
   <table mat-table [dataSource]="ds">
     @for (column of metadata(); track column) {
       <ng-container matColumnDef="{{ column.field }}">
         <th mat-header-cell *matHeaderCellDef>{{ column.label }}</th>
-        @if(column.fn){
-            <td mat-cell *matCellDef="let element">{{ column.fn(element[column.field]) }}</td>
+        @if (column.fn) {
+          <td mat-cell *matCellDef="let element">{{ column.fn(element[column.field]) }}</td>
         } @else {
-            <td mat-cell *matCellDef="let element">{{ element[column.field] }}</td>
+          <td mat-cell *matCellDef="let element">{{ element[column.field] }}</td>
         }
-        
       </ng-container>
     }
 
-    <tr mat-header-row *matHeaderRowDef="dc"></tr>
-    <tr mat-row *matRowDef="let row; columns: dc"></tr>
+    <ng-container></ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns(); sticky: true"></tr>
+    <tr
+      mat-row
+      *matRowDef="let row; columns: displayedColumns()"
+      class="row"
+      (click)="rowSelected(row)"
+    ></tr>
   </table>
-}
+</cdev-lib-scrollbars>

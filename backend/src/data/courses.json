@@ -26,5 +26,355 @@
     "description": "Combine Angular frontend with Node.js backend for complete apps",
     "price": 99.99,
     "createdAt": "2025-04-05T11:15:00Z"
+  },
+  {
+    "id": "5",
+    "name": "TypeScript Mastery",
+    "description": "Master TypeScript from basics to advanced generics, decorators, and utility types",
+    "price": 69.99,
+    "createdAt": "2025-04-12T08:00:00Z"
+  },
+  {
+    "id": "6",
+    "name": "Angular Material & UI Design",
+    "description": "Build beautiful, responsive UIs with Angular Material and custom themes",
+    "price": 54.99,
+    "createdAt": "2025-04-18T10:30:00Z"
+  },
+  {
+    "id": "7",
+    "name": "Testing in Angular",
+    "description": "Unit testing, integration testing, and e2e with Jasmine, Karma, and Cypress",
+    "price": 64.99,
+    "createdAt": "2025-04-25T13:00:00Z"
+  },
+  {
+    "id": "8",
+    "name": "RxJS Reactive Programming",
+    "description": "Deep dive into reactive programming with RxJS operators, subjects, and schedulers",
+    "price": 74.99,
+    "createdAt": "2025-05-02T09:45:00Z"
+  },
+  {
+    "id": "9",
+    "name": "Angular State Management with NgRx",
+    "description": "Manage complex application state using NgRx Store, Effects, and Entity",
+    "price": 84.99,
+    "createdAt": "2025-05-10T11:00:00Z"
+  },
+  {
+    "id": "10",
+    "name": "Angular Universal & SSR",
+    "description": "Server-side rendering with Angular Universal for SEO and performance",
+    "price": 59.99,
+    "createdAt": "2025-05-18T14:15:00Z"
+  },
+  {
+    "id": "11",
+    "name": "Angular Forms Deep Dive",
+    "description": "Template-driven and reactive forms, custom validators, and dynamic forms",
+    "price": 44.99,
+    "createdAt": "2025-05-25T08:30:00Z"
+  },
+  {
+    "id": "12",
+    "name": "Angular Performance Optimization",
+    "description": "Lazy loading, change detection strategies, trackBy, and bundle optimization",
+    "price": 69.99,
+    "createdAt": "2025-06-01T10:00:00Z"
+  },
+  {
+    "id": "13",
+    "name": "Angular PWA Development",
+    "description": "Build Progressive Web Apps with Angular service workers and offline support",
+    "price": 54.99,
+    "createdAt": "2025-06-08T12:30:00Z"
+  },
+  {
+    "id": "14",
+    "name": "Angular Micro-Frontends",
+    "description": "Implement micro-frontend architecture using Module Federation and Angular",
+    "price": 89.99,
+    "createdAt": "2025-06-15T09:00:00Z"
+  },
+  {
+    "id": "15",
+    "name": "NestJS Backend Development",
+    "description": "Build scalable server-side applications with NestJS and TypeScript",
+    "price": 79.99,
+    "createdAt": "2025-06-22T11:45:00Z"
+  },
+  {
+    "id": "16",
+    "name": "REST API Design Best Practices",
+    "description": "Design robust, scalable REST APIs with proper versioning, pagination, and HATEOAS",
+    "price": 49.99,
+    "createdAt": "2025-06-30T14:00:00Z"
+  },
+  {
+    "id": "17",
+    "name": "GraphQL with Apollo Server",
+    "description": "Build flexible APIs with GraphQL, Apollo Server, and data loaders",
+    "price": 69.99,
+    "createdAt": "2025-07-05T08:15:00Z"
+  },
+  {
+    "id": "18",
+    "name": "WebSockets & Real-Time Apps",
+    "description": "Real-time communication with Socket.IO, WebSockets, and server-sent events",
+    "price": 59.99,
+    "createdAt": "2025-07-12T10:30:00Z"
+  },
+  {
+    "id": "19",
+    "name": "Authentication & Authorization",
+    "description": "Implement OAuth2, JWT, SSO, and role-based access control in web apps",
+    "price": 64.99,
+    "createdAt": "2025-07-20T13:00:00Z"
+  },
+  {
+    "id": "20",
+    "name": "Node.js Microservices",
+    "description": "Build distributed systems with Node.js microservices, message queues, and API gateways",
+    "price": 94.99,
+    "createdAt": "2025-07-28T09:45:00Z"
+  },
+  {
+    "id": "21",
+    "name": "Express.js Advanced Patterns",
+    "description": "Middleware patterns, error handling, rate limiting, and security best practices",
+    "price": 54.99,
+    "createdAt": "2025-08-05T11:00:00Z"
+  },
+  {
+    "id": "22",
+    "name": "File Upload & Storage Solutions",
+    "description": "Handle file uploads, cloud storage integration with AWS S3 and Cloudinary",
+    "price": 44.99,
+    "createdAt": "2025-08-12T14:30:00Z"
+  },
+  {
+    "id": "23",
+    "name": "MongoDB Complete Guide",
+    "description": "Master MongoDB from CRUD operations to aggregation pipelines and indexing",
+    "price": 69.99,
+    "createdAt": "2025-08-20T08:00:00Z"
+  },
+  {
+    "id": "24",
+    "name": "PostgreSQL for Developers",
+    "description": "Relational database design, advanced queries, stored procedures, and performance tuning",
+    "price": 74.99,
+    "createdAt": "2025-08-28T10:15:00Z"
+  },
+  {
+    "id": "25",
+    "name": "Redis Caching Strategies",
+    "description": "Implement caching, session stores, and pub/sub with Redis for high-performance apps",
+    "price": 49.99,
+    "createdAt": "2025-09-05T12:45:00Z"
+  },
+  {
+    "id": "26",
+    "name": "TypeORM & Prisma ORM",
+    "description": "Database modeling and migrations with TypeORM and Prisma for TypeScript projects",
+    "price": 64.99,
+    "createdAt": "2025-09-12T09:30:00Z"
+  },
+  {
+    "id": "27",
+    "name": "Database Design & Normalization",
+    "description": "Learn proper database design, normalization forms, and ER modeling",
+    "price": 54.99,
+    "createdAt": "2025-09-20T11:00:00Z"
+  },
+  {
+    "id": "28",
+    "name": "Elasticsearch for Search Engines",
+    "description": "Build powerful search functionality with Elasticsearch and Kibana",
+    "price": 79.99,
+    "createdAt": "2025-09-28T14:15:00Z"
+  },
+  {
+    "id": "29",
+    "name": "CSS Grid & Flexbox Mastery",
+    "description": "Modern CSS layout techniques with Grid, Flexbox, and responsive design patterns",
+    "price": 39.99,
+    "createdAt": "2025-10-05T08:30:00Z"
+  },
+  {
+    "id": "30",
+    "name": "Sass & CSS Architecture",
+    "description": "Scalable CSS with Sass, BEM methodology, and design systems",
+    "price": 44.99,
+    "createdAt": "2025-10-12T10:00:00Z"
+  },
+  {
+    "id": "31",
+    "name": "Tailwind CSS Complete Course",
+    "description": "Utility-first CSS framework for rapid UI development with responsive design",
+    "price": 49.99,
+    "createdAt": "2025-10-20T12:30:00Z"
+  },
+  {
+    "id": "32",
+    "name": "Web Animations & Motion Design",
+    "description": "CSS animations, Web Animations API, and GSAP for engaging user experiences",
+    "price": 54.99,
+    "createdAt": "2025-10-28T09:00:00Z"
+  },
+  {
+    "id": "33",
+    "name": "Accessibility (A11y) in Web Apps",
+    "description": "Build inclusive web applications following WCAG guidelines and ARIA patterns",
+    "price": 59.99,
+    "createdAt": "2025-11-05T11:15:00Z"
+  },
+  {
+    "id": "34",
+    "name": "Responsive Web Design",
+    "description": "Mobile-first design, media queries, and adaptive layouts for all devices",
+    "price": 39.99,
+    "createdAt": "2025-11-12T14:00:00Z"
+  },
+  {
+    "id": "35",
+    "name": "Unit Testing with Jest",
+    "description": "Comprehensive testing with Jest, mocks, spies, and code coverage analysis",
+    "price": 49.99,
+    "createdAt": "2025-11-20T08:45:00Z"
+  },
+  {
+    "id": "36",
+    "name": "End-to-End Testing with Cypress",
+    "description": "Automated browser testing with Cypress for reliable web applications",
+    "price": 54.99,
+    "createdAt": "2025-11-28T10:30:00Z"
+  },
+  {
+    "id": "37",
+    "name": "Test-Driven Development (TDD)",
+    "description": "Master TDD methodology with practical examples in JavaScript and TypeScript",
+    "price": 64.99,
+    "createdAt": "2025-12-05T13:00:00Z"
+  },
+  {
+    "id": "38",
+    "name": "API Testing with Postman",
+    "description": "Automated API testing, collections, environments, and Newman CLI",
+    "price": 39.99,
+    "createdAt": "2025-12-12T09:15:00Z"
+  },
+  {
+    "id": "39",
+    "name": "Docker for Developers",
+    "description": "Containerize applications with Docker, Docker Compose, and multi-stage builds",
+    "price": 69.99,
+    "createdAt": "2025-12-20T11:00:00Z"
+  },
+  {
+    "id": "40",
+    "name": "Kubernetes Fundamentals",
+    "description": "Orchestrate containers with Kubernetes, pods, services, and deployments",
+    "price": 89.99,
+    "createdAt": "2025-12-28T14:30:00Z"
+  },
+  {
+    "id": "41",
+    "name": "CI/CD Pipelines with GitHub Actions",
+    "description": "Automate build, test, and deployment workflows with GitHub Actions",
+    "price": 59.99,
+    "createdAt": "2026-01-05T08:00:00Z"
+  },
+  {
+    "id": "42",
+    "name": "AWS Cloud Services for Devs",
+    "description": "Deploy and scale applications with EC2, Lambda, S3, and CloudFront",
+    "price": 94.99,
+    "createdAt": "2026-01-12T10:15:00Z"
+  },
+  {
+    "id": "43",
+    "name": "Terraform Infrastructure as Code",
+    "description": "Manage cloud infrastructure declaratively with Terraform and HCL",
+    "price": 79.99,
+    "createdAt": "2026-01-20T12:45:00Z"
+  },
+  {
+    "id": "44",
+    "name": "Monitoring & Observability",
+    "description": "Application monitoring with Prometheus, Grafana, and ELK stack",
+    "price": 74.99,
+    "createdAt": "2026-01-28T09:30:00Z"
+  },
+  {
+    "id": "45",
+    "name": "Clean Architecture in Frontend",
+    "description": "Apply clean architecture principles to Angular and React applications",
+    "price": 84.99,
+    "createdAt": "2026-02-05T11:00:00Z"
+  },
+  {
+    "id": "46",
+    "name": "Design Patterns in TypeScript",
+    "description": "Implement GoF design patterns with TypeScript for maintainable code",
+    "price": 74.99,
+    "createdAt": "2026-02-12T14:15:00Z"
+  },
+  {
+    "id": "47",
+    "name": "Domain-Driven Design (DDD)",
+    "description": "Tackle complex business domains with DDD, aggregates, and bounded contexts",
+    "price": 89.99,
+    "createdAt": "2026-02-20T08:30:00Z"
+  },
+  {
+    "id": "48",
+    "name": "Event-Driven Architecture",
+    "description": "Design event-driven systems with Apache Kafka, RabbitMQ, and event sourcing",
+    "price": 94.99,
+    "createdAt": "2026-02-28T10:00:00Z"
+  },
+  {
+    "id": "49",
+    "name": "Git & Version Control Mastery",
+    "description": "Advanced Git workflows, rebasing, cherry-picking, and collaboration strategies",
+    "price": 44.99,
+    "createdAt": "2026-03-05T12:30:00Z"
+  },
+  {
+    "id": "50",
+    "name": "Web Security Fundamentals",
+    "description": "OWASP Top 10, XSS, CSRF, SQL injection prevention, and security headers",
+    "price": 69.99,
+    "createdAt": "2026-03-12T09:00:00Z"
+  },
+  {
+    "id": "51",
+    "name": "Webpack & Module Bundlers",
+    "description": "Master Webpack, Vite, and ESBuild for optimized frontend builds",
+    "price": 54.99,
+    "createdAt": "2026-03-20T11:15:00Z"
+  },
+  {
+    "id": "52",
+    "name": "Electron Desktop Apps",
+    "description": "Build cross-platform desktop applications with Electron and Angular",
+    "price": 64.99,
+    "createdAt": "2026-03-28T14:00:00Z"
+  },
+  {
+    "id": "53",
+    "name": "Mobile Development with Ionic",
+    "description": "Build hybrid mobile apps with Ionic Framework and Angular",
+    "price": 59.99,
+    "createdAt": "2026-04-05T08:45:00Z"
+  },
+  {
+    "id": "54",
+    "name": "Technical Interview Preparation",
+    "description": "System design, data structures, algorithms, and behavioral interview prep for developers",
+    "price": 99.99,
+    "createdAt": "2026-04-12T10:30:00Z"
   }
 ]

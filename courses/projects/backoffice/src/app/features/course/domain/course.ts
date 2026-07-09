@@ -25,7 +25,11 @@ export class Course {
     this.description = properties.description;
     this.price = properties.price;
 
-    if (properties.createdAt) this.createdAt = properties.createdAt!;
+    if (properties.createdAt) {
+      this.createdAt = properties.createdAt!;
+    } else {
+      this.createdAt = new Date();
+    }
   }
 
   get properties(): CourseProperties {

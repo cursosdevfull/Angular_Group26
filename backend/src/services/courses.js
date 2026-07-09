@@ -22,7 +22,7 @@ function getAll(page = 1, limit = 10) {
   const courses = readCourses();
   const total = courses.length;
   const totalPages = Math.ceil(total / limit);
-  const startIndex = (page - 1) * limit;
+  const startIndex = page * limit;
   const endIndex = startIndex + limit;
   const data = courses.slice(startIndex, endIndex);
 

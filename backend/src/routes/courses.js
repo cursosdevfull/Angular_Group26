@@ -7,8 +7,9 @@ const coursesService = require("../services/courses");
  * Returns paginated list of courses
  */
 router.get("/", (req, res) => {
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 10;
+  console.log("Received request to fetch courses with query:", req.query);
+  const page = parseInt(req.query.page) ?? 1;
+  const limit = parseInt(req.query.limit) ?? 10;
 
   const result = coursesService.getAll(page, limit);
   res.json({ status: "SUCCESS", code: 200, ...result });

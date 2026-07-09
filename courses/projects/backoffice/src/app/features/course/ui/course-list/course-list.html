@@ -1,4 +1,22 @@
 <cdev-lib-title [title]="'Courses'">
-  <button matButton="filled">Add Course</button>
+  <button matButton="filled" (click)="rowSelected()">Add Course</button>
 </cdev-lib-title>
-<cdev-lib-table [dataSource]="dataSource()" [metadata]="metadata"></cdev-lib-table>
+<cdev-lib-table
+  [dataSource]="dataSource()"
+  [metadata]="metadata"
+  (onRowSelected)="rowSelected($event)"
+>
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef style="width: 60px"></th>
+    <td mat-cell *matCellDef="let element">
+      <button matIconButton (click)="delete($event, element)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+</cdev-lib-table>
+<cdev-lib-paginator
+  [pageSize]="pageSize"
+  [length]="length()"
+  (onChangePage)="changePage($event)"
+></cdev-lib-paginator>

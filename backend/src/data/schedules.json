@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "1",
+    "courseId": "1",
+    "dateStart": "2026-07-10T09:00:00Z",
+    "title": "Introduction to Angular",
+    "teacherName": "Carlos Méndez",
+    "summary": "Overview of Angular framework, its architecture, and setting up the development environment",
+    "requeriments": "Basic HTML, CSS, and JavaScript knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "2",
+    "courseId": "1",
+    "dateStart": "2026-07-17T09:00:00Z",
+    "title": "Components and Templates",
+    "teacherName": "Carlos Méndez",
+    "summary": "Deep dive into Angular components, templates, data binding, and component lifecycle",
+    "requeriments": "Completed Introduction to Angular session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "3",
+    "courseId": "1",
+    "dateStart": "2026-07-24T09:00:00Z",
+    "title": "Services and Dependency Injection",
+    "teacherName": "Carlos Méndez",
+    "summary": "Understanding Angular services, dependency injection system, and hierarchical injectors",
+    "requeriments": "Completed Components and Templates session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "4",
+    "courseId": "2",
+    "dateStart": "2026-08-01T14:00:00Z",
+    "title": "RxJS Observables Deep Dive",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Mastering RxJS observables, operators, and multicasting with subjects",
+    "requeriments": "Strong understanding of Angular basics",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "5",
+    "courseId": "2",
+    "dateStart": "2026-08-08T14:00:00Z",
+    "title": "State Management Patterns",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Implementing state management with NgRx Store, actions, reducers, and selectors",
+    "requeriments": "Completed RxJS Observables Deep Dive session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "6",
+    "courseId": "2",
+    "dateStart": "2026-08-15T14:00:00Z",
+    "title": "Performance Optimization Techniques",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Change detection strategies, lazy loading, trackBy, and bundle optimization",
+    "requeriments": "Completed State Management Patterns session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "7",
+    "courseId": "3",
+    "dateStart": "2026-08-20T10:00:00Z",
+    "title": "Express.js Fundamentals",
+    "teacherName": "Luis Vargas",
+    "summary": "Setting up Express server, routing, middleware, and request handling",
+    "requeriments": "Basic JavaScript and Node.js knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "8",
+    "courseId": "3",
+    "dateStart": "2026-08-27T10:00:00Z",
+    "title": "Building RESTful APIs",
+    "teacherName": "Luis Vargas",
+    "summary": "Designing and implementing RESTful endpoints with proper HTTP methods and status codes",
+    "requeriments": "Completed Express.js Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "9",
+    "courseId": "3",
+    "dateStart": "2026-09-03T10:00:00Z",
+    "title": "JWT Authentication Implementation",
+    "teacherName": "Luis Vargas",
+    "summary": "Implementing JSON Web Token authentication, middleware protection, and role-based access",
+    "requeriments": "Completed Building RESTful APIs session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "10",
+    "courseId": "4",
+    "dateStart": "2026-09-10T11:00:00Z",
+    "title": "Full-Stack Project Setup",
+    "teacherName": "María Fernández",
+    "summary": "Setting up Angular frontend with Node.js backend, project structure, and environment configuration",
+    "requeriments": "Knowledge of Angular and Node.js basics",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "11",
+    "courseId": "4",
+    "dateStart": "2026-09-17T11:00:00Z",
+    "title": "API Integration and Data Flow",
+    "teacherName": "María Fernández",
+    "summary": "Connecting Angular services to backend APIs, HTTP interceptors, and error handling",
+    "requeriments": "Completed Full-Stack Project Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "12",
+    "courseId": "4",
+    "dateStart": "2026-09-24T11:00:00Z",
+    "title": "Deployment and Production Ready",
+    "teacherName": "María Fernández",
+    "summary": "Deploying full-stack application to production, CI/CD pipelines, and monitoring",
+    "requeriments": "Completed API Integration and Data Flow session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "13",
+    "courseId": "5",
+    "dateStart": "2026-10-01T08:00:00Z",
+    "title": "TypeScript Fundamentals",
+    "teacherName": "Diego Ramírez",
+    "summary": "TypeScript basics: types, interfaces, enums, and type inference",
+    "requeriments": "JavaScript programming experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "14",
+    "courseId": "5",
+    "dateStart": "2026-10-08T08:00:00Z",
+    "title": "Advanced Generics and Utility Types",
+    "teacherName": "Diego Ramírez",
+    "summary": "Mastering generics, conditional types, mapped types, and built-in utility types",
+    "requeriments": "Completed TypeScript Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "15",
+    "courseId": "5",
+    "dateStart": "2026-10-15T08:00:00Z",
+    "title": "Decorators and Advanced Patterns",
+    "teacherName": "Diego Ramírez",
+    "summary": "TypeScript decorators, metadata reflection, and advanced design patterns",
+    "requeriments": "Completed Advanced Generics session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "16",
+    "courseId": "6",
+    "dateStart": "2026-10-20T10:30:00Z",
+    "title": "Angular Material Setup and Theming",
+    "teacherName": "Sofía López",
+    "summary": "Installing Angular Material, configuring themes, and understanding the component library",
+    "requeriments": "Angular fundamentals knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "17",
+    "courseId": "6",
+    "dateStart": "2026-10-27T10:30:00Z",
+    "title": "Building Responsive Layouts",
+    "teacherName": "Sofía López",
+    "summary": "Creating responsive designs with Angular Material grid, cards, and navigation components",
+    "requeriments": "Completed Angular Material Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "18",
+    "courseId": "6",
+    "dateStart": "2026-11-03T10:30:00Z",
+    "title": "Custom Themes and Advanced Styling",
+    "teacherName": "Sofía López",
+    "summary": "Creating custom themes, dark mode support, and advanced SCSS styling techniques",
+    "requeriments": "Completed Building Responsive Layouts session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "19",
+    "courseId": "7",
+    "dateStart": "2026-11-10T13:00:00Z",
+    "title": "Unit Testing with Jasmine and Karma",
+    "teacherName": "Roberto Castillo",
+    "summary": "Writing unit tests for components, services, and pipes using Jasmine and Karma",
+    "requeriments": "Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "20",
+    "courseId": "7",
+    "dateStart": "2026-11-17T13:00:00Z",
+    "title": "Integration Testing Strategies",
+    "teacherName": "Roberto Castillo",
+    "summary": "Testing component interactions, service integration, and HTTP mocking",
+    "requeriments": "Completed Unit Testing session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "21",
+    "courseId": "7",
+    "dateStart": "2026-11-24T13:00:00Z",
+    "title": "End-to-End Testing with Cypress",
+    "teacherName": "Roberto Castillo",
+    "summary": "Setting up Cypress for e2e testing, writing test scenarios, and CI integration",
+    "requeriments": "Completed Integration Testing session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "22",
+    "courseId": "8",
+    "dateStart": "2026-12-01T09:45:00Z",
+    "title": "Observables and Operators Mastery",
+    "teacherName": "Elena Guzmán",
+    "summary": "Deep understanding of observables, pipeable operators, and marble testing",
+    "requeriments": "Angular and basic RxJS knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "23",
+    "courseId": "8",
+    "dateStart": "2026-12-08T09:45:00Z",
+    "title": "Subjects and Multicasting",
+    "teacherName": "Elena Guzmán",
+    "summary": "Using Subject, BehaviorSubject, ReplaySubject, and AsyncSubject for multicasting",
+    "requeriments": "Completed Observables and Operators session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "24",
+    "courseId": "8",
+    "dateStart": "2026-12-15T09:45:00Z",
+    "title": "Schedulers and Advanced Patterns",
+    "teacherName": "Elena Guzmán",
+    "summary": "Understanding RxJS schedulers, custom operators, and reactive patterns",
+    "requeriments": "Completed Subjects and Multicasting session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "25",
+    "courseId": "9",
+    "dateStart": "2027-01-05T11:00:00Z",
+    "title": "NgRx Store Fundamentals",
+    "teacherName": "Pablo Herrera",
+    "summary": "Setting up NgRx store, defining actions, reducers, and selectors",
+    "requeriments": "Advanced Angular and RxJS knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "26",
+    "courseId": "9",
+    "dateStart": "2027-01-12T11:00:00Z",
+    "title": "NgRx Effects and Side Effects",
+    "teacherName": "Pablo Herrera",
+    "summary": "Managing side effects with NgRx Effects, API calls, and error handling",
+    "requeriments": "Completed NgRx Store Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "27",
+    "courseId": "9",
+    "dateStart": "2027-01-19T11:00:00Z",
+    "title": "NgRx Entity and Advanced Patterns",
+    "teacherName": "Pablo Herrera",
+    "summary": "Using NgRx Entity for collections, router store, and devtools configuration",
+    "requeriments": "Completed NgRx Effects session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "28",
+    "courseId": "10",
+    "dateStart": "2027-01-25T14:15:00Z",
+    "title": "Angular Universal Setup",
+    "teacherName": "Valentina Ríos",
+    "summary": "Configuring Angular Universal for server-side rendering in an existing Angular app",
+    "requeriments": "Advanced Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "29",
+    "courseId": "10",
+    "dateStart": "2027-02-01T14:15:00Z",
+    "title": "SEO and Social Media Metadata",
+    "teacherName": "Valentina Ríos",
+    "summary": "Implementing SEO best practices, meta tags, and Open Graph protocol with SSR",
+    "requeriments": "Completed Angular Universal Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "30",
+    "courseId": "10",
+    "dateStart": "2027-02-08T14:15:00Z",
+    "title": "Performance and Caching Strategies",
+    "teacherName": "Valentina Ríos",
+    "summary": "Optimizing SSR performance with caching, transfer state, and pre-rendering",
+    "requeriments": "Completed SEO and Metadata session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "31",
+    "courseId": "11",
+    "dateStart": "2027-02-15T08:30:00Z",
+    "title": "Template-Driven Forms",
+    "teacherName": "Carlos Méndez",
+    "summary": "Building forms with ngModel, validation, and template reference variables",
+    "requeriments": "Angular fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "32",
+    "courseId": "11",
+    "dateStart": "2027-02-22T08:30:00Z",
+    "title": "Reactive Forms in Depth",
+    "teacherName": "Carlos Méndez",
+    "summary": "FormGroup, FormArray, FormBuilder, and reactive form validation patterns",
+    "requeriments": "Completed Template-Driven Forms session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "33",
+    "courseId": "11",
+    "dateStart": "2027-03-01T08:30:00Z",
+    "title": "Custom Validators and Dynamic Forms",
+    "teacherName": "Carlos Méndez",
+    "summary": "Creating custom sync/async validators and dynamically generated reactive forms",
+    "requeriments": "Completed Reactive Forms session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "34",
+    "courseId": "12",
+    "dateStart": "2027-03-08T10:00:00Z",
+    "title": "Change Detection Strategies",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Understanding Default vs OnPush change detection, Zone.js, and manual detection",
+    "requeriments": "Intermediate Angular knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "35",
+    "courseId": "12",
+    "dateStart": "2027-03-15T10:00:00Z",
+    "title": "Lazy Loading and Code Splitting",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Implementing lazy loading modules, preloading strategies, and route-level splitting",
+    "requeriments": "Completed Change Detection session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "36",
+    "courseId": "12",
+    "dateStart": "2027-03-22T10:00:00Z",
+    "title": "Bundle Optimization and Tree Shaking",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Optimizing production builds, analyzing bundles, and implementing tree shaking",
+    "requeriments": "Completed Lazy Loading session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "37",
+    "courseId": "13",
+    "dateStart": "2027-03-29T12:30:00Z",
+    "title": "Service Workers in Angular",
+    "teacherName": "Sofía López",
+    "summary": "Configuring Angular service workers, caching strategies, and offline mode",
+    "requeriments": "Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "38",
+    "courseId": "13",
+    "dateStart": "2027-04-05T12:30:00Z",
+    "title": "Push Notifications",
+    "teacherName": "Sofía López",
+    "summary": "Implementing web push notifications with Angular and Firebase Cloud Messaging",
+    "requeriments": "Completed Service Workers session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "39",
+    "courseId": "13",
+    "dateStart": "2027-04-12T12:30:00Z",
+    "title": "PWA Best Practices and Deployment",
+    "teacherName": "Sofía López",
+    "summary": "PWA audit, manifest configuration, install prompts, and app store deployment",
+    "requeriments": "Completed Push Notifications session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "40",
+    "courseId": "14",
+    "dateStart": "2027-04-19T09:00:00Z",
+    "title": "Micro-Frontend Architecture Overview",
+    "teacherName": "Roberto Castillo",
+    "summary": "Understanding micro-frontend concepts, benefits, and implementation strategies",
+    "requeriments": "Advanced Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "41",
+    "courseId": "14",
+    "dateStart": "2027-04-26T09:00:00Z",
+    "title": "Module Federation with Angular",
+    "teacherName": "Roberto Castillo",
+    "summary": "Implementing Webpack Module Federation for runtime integration of micro-apps",
+    "requeriments": "Completed Micro-Frontend Architecture session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "42",
+    "courseId": "14",
+    "dateStart": "2027-05-03T09:00:00Z",
+    "title": "Shared State and Communication",
+    "teacherName": "Roberto Castillo",
+    "summary": "Managing shared state, cross-app communication, and routing in micro-frontends",
+    "requeriments": "Completed Module Federation session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "43",
+    "courseId": "15",
+    "dateStart": "2027-05-10T11:45:00Z",
+    "title": "NestJS Fundamentals",
+    "teacherName": "Luis Vargas",
+    "summary": "Setting up NestJS project, modules, controllers, and providers architecture",
+    "requeriments": "TypeScript and Node.js experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "44",
+    "courseId": "15",
+    "dateStart": "2027-05-17T11:45:00Z",
+    "title": "Middleware, Guards, and Interceptors",
+    "teacherName": "Luis Vargas",
+    "summary": "Implementing request pipeline with NestJS middleware, guards, interceptors, and pipes",
+    "requeriments": "Completed NestJS Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "45",
+    "courseId": "15",
+    "dateStart": "2027-05-24T11:45:00Z",
+    "title": "Database Integration and TypeORM",
+    "teacherName": "Luis Vargas",
+    "summary": "Connecting NestJS to databases with TypeORM, migrations, and repository patterns",
+    "requeriments": "Completed Middleware and Guards session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "46",
+    "courseId": "16",
+    "dateStart": "2027-05-31T14:00:00Z",
+    "title": "REST API Design Principles",
+    "teacherName": "María Fernández",
+    "summary": "Understanding REST constraints, resource naming, and HTTP method semantics",
+    "requeriments": "Basic API development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "47",
+    "courseId": "16",
+    "dateStart": "2027-06-07T14:00:00Z",
+    "title": "API Versioning and Pagination",
+    "teacherName": "María Fernández",
+    "summary": "Implementing API versioning strategies, cursor/offset pagination, and filtering",
+    "requeriments": "Completed REST API Design Principles session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "48",
+    "courseId": "16",
+    "dateStart": "2027-06-14T14:00:00Z",
+    "title": "HATEOAS and Advanced API Patterns",
+    "teacherName": "María Fernández",
+    "summary": "Implementing HATEOAS, hypermedia controls, and advanced REST patterns",
+    "requeriments": "Completed API Versioning session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "49",
+    "courseId": "17",
+    "dateStart": "2027-06-21T08:15:00Z",
+    "title": "GraphQL Schema Design",
+    "teacherName": "Diego Ramírez",
+    "summary": "Designing GraphQL schemas, types, queries, and mutations with Apollo Server",
+    "requeriments": "Node.js and TypeScript experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "50",
+    "courseId": "17",
+    "dateStart": "2027-06-28T08:15:00Z",
+    "title": "Resolvers and Data Loaders",
+    "teacherName": "Diego Ramírez",
+    "summary": "Implementing resolvers, data loaders, and solving the N+1 query problem",
+    "requeriments": "Completed GraphQL Schema Design session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "51",
+    "courseId": "17",
+    "dateStart": "2027-07-05T08:15:00Z",
+    "title": "Apollo Federation and Gateway",
+    "teacherName": "Diego Ramírez",
+    "summary": "Building federated GraphQL services with Apollo Federation and gateway composition",
+    "requeriments": "Completed Resolvers and Data Loaders session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "52",
+    "courseId": "18",
+    "dateStart": "2027-07-12T10:30:00Z",
+    "title": "WebSocket Fundamentals",
+    "teacherName": "Elena Guzmán",
+    "summary": "Understanding WebSocket protocol, handshake process, and Socket.IO setup",
+    "requeriments": "Node.js development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "53",
+    "courseId": "18",
+    "dateStart": "2027-07-19T10:30:00Z",
+    "title": "Real-Time Chat Application",
+    "teacherName": "Elena Guzmán",
+    "summary": "Building a complete real-time chat app with rooms, namespaces, and typing indicators",
+    "requeriments": "Completed WebSocket Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "54",
+    "courseId": "18",
+    "dateStart": "2027-07-26T10:30:00Z",
+    "title": "Scaling Real-Time Applications",
+    "teacherName": "Elena Guzmán",
+    "summary": "Scaling WebSocket apps with Redis adapter, load balancing, and horizontal scaling",
+    "requeriments": "Completed Real-Time Chat Application session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "55",
+    "courseId": "19",
+    "dateStart": "2027-08-02T13:00:00Z",
+    "title": "OAuth2 and OpenID Connect",
+    "teacherName": "Pablo Herrera",
+    "summary": "Understanding OAuth2 flows, OpenID Connect, and third-party authentication",
+    "requeriments": "Web development and API experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "56",
+    "courseId": "19",
+    "dateStart": "2027-08-09T13:00:00Z",
+    "title": "JWT Deep Dive and Best Practices",
+    "teacherName": "Pablo Herrera",
+    "summary": "JWT structure, signing algorithms, token rotation, and refresh token strategies",
+    "requeriments": "Completed OAuth2 and OpenID Connect session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "57",
+    "courseId": "19",
+    "dateStart": "2027-08-16T13:00:00Z",
+    "title": "Role-Based Access Control (RBAC)",
+    "teacherName": "Pablo Herrera",
+    "summary": "Implementing RBAC with guards, decorators, and permission-based access in APIs",
+    "requeriments": "Completed JWT Deep Dive session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "58",
+    "courseId": "20",
+    "dateStart": "2027-08-23T09:45:00Z",
+    "title": "Microservices Architecture Overview",
+    "teacherName": "Luis Vargas",
+    "summary": "Understanding microservices patterns, service decomposition, and communication styles",
+    "requeriments": "Backend development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "59",
+    "courseId": "20",
+    "dateStart": "2027-08-30T09:45:00Z",
+    "title": "Message Queues with RabbitMQ",
+    "teacherName": "Luis Vargas",
+    "summary": "Implementing asynchronous communication with RabbitMQ, exchanges, and queues",
+    "requeriments": "Completed Microservices Architecture session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "60",
+    "courseId": "20",
+    "dateStart": "2027-09-06T09:45:00Z",
+    "title": "API Gateway and Service Discovery",
+    "teacherName": "Luis Vargas",
+    "summary": "Building API gateways, implementing service discovery, and circuit breakers",
+    "requeriments": "Completed Message Queues session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "61",
+    "courseId": "21",
+    "dateStart": "2027-09-13T11:00:00Z",
+    "title": "Advanced Middleware Patterns",
+    "teacherName": "María Fernández",
+    "summary": "Creating reusable middleware, error handling middleware, and middleware composition",
+    "requeriments": "Express.js experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "62",
+    "courseId": "21",
+    "dateStart": "2027-09-20T11:00:00Z",
+    "title": "Rate Limiting and Security Headers",
+    "teacherName": "María Fernández",
+    "summary": "Implementing rate limiting, helmet security headers, and CORS configuration",
+    "requeriments": "Completed Advanced Middleware Patterns session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "63",
+    "courseId": "21",
+    "dateStart": "2027-09-27T11:00:00Z",
+    "title": "Logging and Error Handling Best Practices",
+    "teacherName": "María Fernández",
+    "summary": "Structured logging with Winston/Morgan, centralized error handling, and monitoring",
+    "requeriments": "Completed Rate Limiting session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "64",
+    "courseId": "22",
+    "dateStart": "2027-10-04T14:30:00Z",
+    "title": "File Upload Strategies",
+    "teacherName": "Sofía López",
+    "summary": "Handling file uploads with multer, streaming, and multipart form data",
+    "requeriments": "Node.js and Express experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "65",
+    "courseId": "22",
+    "dateStart": "2027-10-11T14:30:00Z",
+    "title": "AWS S3 Integration",
+    "teacherName": "Sofía López",
+    "summary": "Integrating AWS S3 for file storage, presigned URLs, and bucket policies",
+    "requeriments": "Completed File Upload Strategies session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "66",
+    "courseId": "22",
+    "dateStart": "2027-10-18T14:30:00Z",
+    "title": "Cloudinary and Image Processing",
+    "teacherName": "Sofía López",
+    "summary": "Using Cloudinary for image uploads, transformations, and optimization",
+    "requeriments": "Completed AWS S3 Integration session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "67",
+    "courseId": "23",
+    "dateStart": "2027-10-25T08:00:00Z",
+    "title": "MongoDB CRUD Operations",
+    "teacherName": "Diego Ramírez",
+    "summary": "Mastering MongoDB CRUD operations, document design, and indexing basics",
+    "requeriments": "Database fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "68",
+    "courseId": "23",
+    "dateStart": "2027-11-01T08:00:00Z",
+    "title": "Aggregation Pipeline",
+    "teacherName": "Diego Ramírez",
+    "summary": "Building complex data queries with MongoDB aggregation pipeline stages and operators",
+    "requeriments": "Completed MongoDB CRUD Operations session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "69",
+    "courseId": "23",
+    "dateStart": "2027-11-08T08:00:00Z",
+    "title": "Indexing and Performance Optimization",
+    "teacherName": "Diego Ramírez",
+    "summary": "Creating effective indexes, understanding query plans, and optimizing performance",
+    "requeriments": "Completed Aggregation Pipeline session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "70",
+    "courseId": "24",
+    "dateStart": "2027-11-15T10:15:00Z",
+    "title": "Relational Database Design",
+    "teacherName": "Elena Guzmán",
+    "summary": "Designing relational schemas, normalization forms, and entity-relationship modeling",
+    "requeriments": "Basic database knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "71",
+    "courseId": "24",
+    "dateStart": "2027-11-22T10:15:00Z",
+    "title": "Advanced SQL Queries",
+    "teacherName": "Elena Guzmán",
+    "summary": "Writing complex SQL queries with joins, subqueries, window functions, and CTEs",
+    "requeriments": "Completed Relational Database Design session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "72",
+    "courseId": "24",
+    "dateStart": "2027-11-29T10:15:00Z",
+    "title": "Stored Procedures and Performance Tuning",
+    "teacherName": "Elena Guzmán",
+    "summary": "Creating stored procedures, functions, triggers, and query performance tuning",
+    "requeriments": "Completed Advanced SQL Queries session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "73",
+    "courseId": "25",
+    "dateStart": "2027-12-06T12:45:00Z",
+    "title": "Redis Data Structures",
+    "teacherName": "Pablo Herrera",
+    "summary": "Understanding Redis data types: strings, lists, sets, hashes, and sorted sets",
+    "requeriments": "Backend development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "74",
+    "courseId": "25",
+    "dateStart": "2027-12-13T12:45:00Z",
+    "title": "Caching Strategies with Redis",
+    "teacherName": "Pablo Herrera",
+    "summary": "Implementing cache-aside, write-through, and TTL-based caching patterns",
+    "requeriments": "Completed Redis Data Structures session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "75",
+    "courseId": "25",
+    "dateStart": "2027-12-20T12:45:00Z",
+    "title": "Pub/Sub and Session Management",
+    "teacherName": "Pablo Herrera",
+    "summary": "Using Redis pub/sub for messaging and managing distributed sessions",
+    "requeriments": "Completed Caching Strategies session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "76",
+    "courseId": "26",
+    "dateStart": "2028-01-03T09:30:00Z",
+    "title": "TypeORM Setup and Configuration",
+    "teacherName": "Roberto Castillo",
+    "summary": "Setting up TypeORM with TypeScript, entities, and connection configuration",
+    "requeriments": "TypeScript and database experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "77",
+    "courseId": "26",
+    "dateStart": "2028-01-10T09:30:00Z",
+    "title": "Prisma ORM Deep Dive",
+    "teacherName": "Roberto Castillo",
+    "summary": "Using Prisma for database modeling, migrations, and type-safe queries",
+    "requeriments": "Completed TypeORM Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "78",
+    "courseId": "26",
+    "dateStart": "2028-01-17T09:30:00Z",
+    "title": "Migrations and Schema Evolution",
+    "teacherName": "Roberto Castillo",
+    "summary": "Managing database migrations, seeding, and version control for database schemas",
+    "requeriments": "Completed Prisma ORM Deep Dive session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "79",
+    "courseId": "27",
+    "dateStart": "2028-01-24T11:00:00Z",
+    "title": "Database Normalization",
+    "teacherName": "Valentina Ríos",
+    "summary": "Understanding 1NF through 5NF, denormalization trade-offs, and practical application",
+    "requeriments": "Basic database knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "80",
+    "courseId": "27",
+    "dateStart": "2028-01-31T11:00:00Z",
+    "title": "ER Modeling and Relationship Design",
+    "teacherName": "Valentina Ríos",
+    "summary": "Creating entity-relationship diagrams, cardinality, and relationship types",
+    "requeriments": "Completed Database Normalization session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "81",
+    "courseId": "27",
+    "dateStart": "2028-02-07T11:00:00Z",
+    "title": "Real-World Database Design Project",
+    "teacherName": "Valentina Ríos",
+    "summary": "Designing a complete database for an e-commerce system from requirements to implementation",
+    "requeriments": "Completed ER Modeling session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "82",
+    "courseId": "28",
+    "dateStart": "2028-02-14T14:15:00Z",
+    "title": "Elasticsearch Fundamentals",
+    "teacherName": "Carlos Méndez",
+    "summary": "Setting up Elasticsearch, indexing documents, and understanding the search engine",
+    "requeriments": "Backend development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "83",
+    "courseId": "28",
+    "dateStart": "2028-02-21T14:15:00Z",
+    "title": "Full-Text Search and Query DSL",
+    "teacherName": "Carlos Méndez",
+    "summary": "Building powerful search queries with Elasticsearch Query DSL and analyzers",
+    "requeriments": "Completed Elasticsearch Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "84",
+    "courseId": "28",
+    "dateStart": "2028-02-28T14:15:00Z",
+    "title": "Kibana Dashboards and Visualizations",
+    "teacherName": "Carlos Méndez",
+    "summary": "Creating interactive dashboards, visualizations, and monitoring with Kibana",
+    "requeriments": "Completed Full-Text Search session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "85",
+    "courseId": "29",
+    "dateStart": "2028-03-06T08:30:00Z",
+    "title": "CSS Grid Layout System",
+    "teacherName": "Sofía López",
+    "summary": "Mastering CSS Grid: grid containers, tracks, areas, and responsive grid layouts",
+    "requeriments": "Basic HTML and CSS knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "86",
+    "courseId": "29",
+    "dateStart": "2028-03-13T08:30:00Z",
+    "title": "Flexbox Complete Guide",
+    "teacherName": "Sofía López",
+    "summary": "Understanding Flexbox container and item properties for flexible layouts",
+    "requeriments": "Completed CSS Grid Layout session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "87",
+    "courseId": "29",
+    "dateStart": "2028-03-20T08:30:00Z",
+    "title": "Responsive Design Patterns",
+    "teacherName": "Sofía López",
+    "summary": "Implementing common responsive patterns, media queries, and mobile-first design",
+    "requeriments": "Completed Flexbox Complete Guide session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "88",
+    "courseId": "30",
+    "dateStart": "2028-03-27T10:00:00Z",
+    "title": "Sass Preprocessor Basics",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Using Sass variables, nesting, mixins, and functions for efficient CSS",
+    "requeriments": "Strong CSS knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "89",
+    "courseId": "30",
+    "dateStart": "2028-04-03T10:00:00Z",
+    "title": "BEM Methodology and CSS Architecture",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Implementing BEM naming convention and scalable CSS architecture patterns",
+    "requeriments": "Completed Sass Preprocessor Basics session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "90",
+    "courseId": "30",
+    "dateStart": "2028-04-10T10:00:00Z",
+    "title": "Design Systems and Component Libraries",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Building maintainable design systems with design tokens and component architecture",
+    "requeriments": "Completed BEM Methodology session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "91",
+    "courseId": "31",
+    "dateStart": "2028-04-17T12:30:00Z",
+    "title": "Tailwind CSS Setup and Configuration",
+    "teacherName": "Diego Ramírez",
+    "summary": "Installing Tailwind CSS, configuring the theme, and understanding utility-first approach",
+    "requeriments": "CSS fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "92",
+    "courseId": "31",
+    "dateStart": "2028-04-24T12:30:00Z",
+    "title": "Building Components with Tailwind",
+    "teacherName": "Diego Ramírez",
+    "summary": "Creating responsive components like cards, navbars, and forms with Tailwind utilities",
+    "requeriments": "Completed Tailwind CSS Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "93",
+    "courseId": "31",
+    "dateStart": "2028-05-01T12:30:00Z",
+    "title": "Advanced Customization and Plugins",
+    "teacherName": "Diego Ramírez",
+    "summary": "Extending Tailwind with custom utilities, plugins, and advanced configuration",
+    "requeriments": "Completed Building Components session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "94",
+    "courseId": "32",
+    "dateStart": "2028-05-08T09:00:00Z",
+    "title": "CSS Animations and Transitions",
+    "teacherName": "Elena Guzmán",
+    "summary": "Creating smooth animations with CSS transitions, keyframes, and animation properties",
+    "requeriments": "CSS fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "95",
+    "courseId": "32",
+    "dateStart": "2028-05-15T09:00:00Z",
+    "title": "Web Animations API",
+    "teacherName": "Elena Guzmán",
+    "summary": "Using the Web Animations API for programmatic animation control and performance",
+    "requeriments": "Completed CSS Animations session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "96",
+    "courseId": "32",
+    "dateStart": "2028-05-22T09:00:00Z",
+    "title": "GSAP for Advanced Animations",
+    "teacherName": "Elena Guzmán",
+    "summary": "Building complex animations and interactive experiences with GSAP library",
+    "requeriments": "Completed Web Animations API session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "97",
+    "courseId": "33",
+    "dateStart": "2028-05-29T11:15:00Z",
+    "title": "WCAG Guidelines and Standards",
+    "teacherName": "María Fernández",
+    "summary": "Understanding WCAG 2.1 guidelines, conformance levels, and accessibility principles",
+    "requeriments": "Web development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "98",
+    "courseId": "33",
+    "dateStart": "2028-06-05T11:15:00Z",
+    "title": "ARIA Patterns and Semantic HTML",
+    "teacherName": "María Fernández",
+    "summary": "Implementing ARIA roles, properties, and semantic HTML for accessible applications",
+    "requeriments": "Completed WCAG Guidelines session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "99",
+    "courseId": "33",
+    "dateStart": "2028-06-12T11:15:00Z",
+    "title": "Accessibility Testing and Tools",
+    "teacherName": "María Fernández",
+    "summary": "Testing accessibility with axe, Lighthouse, screen readers, and automated audits",
+    "requeriments": "Completed ARIA Patterns session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "100",
+    "courseId": "34",
+    "dateStart": "2028-06-19T14:00:00Z",
+    "title": "Mobile-First Design Philosophy",
+    "teacherName": "Valentina Ríos",
+    "summary": "Understanding mobile-first approach, content prioritization, and progressive enhancement",
+    "requeriments": "HTML and CSS fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "101",
+    "courseId": "34",
+    "dateStart": "2028-06-26T14:00:00Z",
+    "title": "Media Queries and Breakpoints",
+    "teacherName": "Valentina Ríos",
+    "summary": "Mastering media queries, custom breakpoints, and responsive typography",
+    "requeriments": "Completed Mobile-First Design session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "102",
+    "courseId": "34",
+    "dateStart": "2028-07-03T14:00:00Z",
+    "title": "Adaptive Layouts for All Devices",
+    "teacherName": "Valentina Ríos",
+    "summary": "Building layouts that adapt seamlessly across mobile, tablet, and desktop devices",
+    "requeriments": "Completed Media Queries session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "103",
+    "courseId": "35",
+    "dateStart": "2028-07-10T08:45:00Z",
+    "title": "Jest Testing Framework Setup",
+    "teacherName": "Roberto Castillo",
+    "summary": "Configuring Jest, writing test suites, and understanding test assertions",
+    "requeriments": "JavaScript development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "104",
+    "courseId": "35",
+    "dateStart": "2028-07-17T08:45:00Z",
+    "title": "Mocks and Spies",
+    "teacherName": "Roberto Castillo",
+    "summary": "Using Jest mocks, spies, and stubs for isolating units and testing in isolation",
+    "requeriments": "Completed Jest Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "105",
+    "courseId": "35",
+    "dateStart": "2028-07-24T08:45:00Z",
+    "title": "Code Coverage and Best Practices",
+    "teacherName": "Roberto Castillo",
+    "summary": "Measuring code coverage, setting thresholds, and writing meaningful tests",
+    "requeriments": "Completed Mocks and Spies session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "106",
+    "courseId": "36",
+    "dateStart": "2028-07-31T10:30:00Z",
+    "title": "Cypress Setup and First Tests",
+    "teacherName": "Pablo Herrera",
+    "summary": "Installing Cypress, writing first e2e tests, and understanding the test runner",
+    "requeriments": "Testing fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "107",
+    "courseId": "36",
+    "dateStart": "2028-08-07T10:30:00Z",
+    "title": "Custom Commands and Fixtures",
+    "teacherName": "Pablo Herrera",
+    "summary": "Creating reusable custom commands, test fixtures, and data-driven tests",
+    "requeriments": "Completed Cypress Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "108",
+    "courseId": "36",
+    "dateStart": "2028-08-14T10:30:00Z",
+    "title": "Cypress Dashboard and CI Integration",
+    "teacherName": "Pablo Herrera",
+    "summary": "Connecting to Cypress Cloud, parallel testing, and GitHub Actions integration",
+    "requeriments": "Completed Custom Commands session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "109",
+    "courseId": "37",
+    "dateStart": "2028-08-21T13:00:00Z",
+    "title": "TDD Fundamentals and Red-Green-Refactor",
+    "teacherName": "Luis Vargas",
+    "summary": "Understanding Test-Driven Development cycle, writing tests first, and iterative development",
+    "requeriments": "Programming experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "110",
+    "courseId": "37",
+    "dateStart": "2028-08-28T13:00:00Z",
+    "title": "TDD in JavaScript and TypeScript",
+    "teacherName": "Luis Vargas",
+    "summary": "Applying TDD practices with Jest and TypeScript for type-safe test-driven development",
+    "requeriments": "Completed TDD Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "111",
+    "courseId": "37",
+    "dateStart": "2028-09-04T13:00:00Z",
+    "title": "TDD with External Dependencies",
+    "teacherName": "Luis Vargas",
+    "summary": "Testing code with databases, APIs, and files using TDD with test doubles",
+    "requeriments": "Completed TDD in JavaScript session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "112",
+    "courseId": "38",
+    "dateStart": "2028-09-11T09:15:00Z",
+    "title": "Postman Collections and Environments",
+    "teacherName": "Diego Ramírez",
+    "summary": "Creating Postman collections, managing environments, and organizing API tests",
+    "requeriments": "REST API knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "113",
+    "courseId": "38",
+    "dateStart": "2028-09-18T09:15:00Z",
+    "title": "Automated Testing with Postman",
+    "teacherName": "Diego Ramírez",
+    "summary": "Writing test scripts, assertions, and chaining requests in Postman",
+    "requeriments": "Completed Postman Collections session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "114",
+    "courseId": "38",
+    "dateStart": "2028-09-25T09:15:00Z",
+    "title": "Newman CLI and CI Integration",
+    "teacherName": "Diego Ramírez",
+    "summary": "Running Postman collections with Newman CLI and integrating into CI/CD pipelines",
+    "requeriments": "Completed Automated Testing session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "115",
+    "courseId": "39",
+    "dateStart": "2028-10-02T11:00:00Z",
+    "title": "Docker Fundamentals",
+    "teacherName": "Carlos Méndez",
+    "summary": "Understanding Docker concepts, images, containers, and the Docker architecture",
+    "requeriments": "Development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "116",
+    "courseId": "39",
+    "dateStart": "2028-10-09T11:00:00Z",
+    "title": "Docker Compose and Multi-Container Apps",
+    "teacherName": "Carlos Méndez",
+    "summary": "Orchestrating multi-container applications with Docker Compose and networking",
+    "requeriments": "Completed Docker Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "117",
+    "courseId": "39",
+    "dateStart": "2028-10-16T11:00:00Z",
+    "title": "Multi-Stage Builds and Optimization",
+    "teacherName": "Carlos Méndez",
+    "summary": "Optimizing Docker images with multi-stage builds, layer caching, and security scanning",
+    "requeriments": "Completed Docker Compose session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "118",
+    "courseId": "40",
+    "dateStart": "2028-10-23T14:30:00Z",
+    "title": "Kubernetes Architecture",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Understanding Kubernetes clusters, nodes, pods, and the control plane",
+    "requeriments": "Docker experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "119",
+    "courseId": "40",
+    "dateStart": "2028-10-30T14:30:00Z",
+    "title": "Workloads, Services, and Networking",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Deploying applications with Deployments, Services, Ingress, and ConfigMaps",
+    "requeriments": "Completed Kubernetes Architecture session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "120",
+    "courseId": "40",
+    "dateStart": "2028-11-06T14:30:00Z",
+    "title": "Storage and Stateful Applications",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Managing persistent storage with Volumes, PVCs, and StatefulSets in Kubernetes",
+    "requeriments": "Completed Workloads and Services session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "121",
+    "courseId": "41",
+    "dateStart": "2028-11-13T08:00:00Z",
+    "title": "GitHub Actions Workflows",
+    "teacherName": "Sofía López",
+    "summary": "Creating CI/CD workflows with GitHub Actions, triggers, and job definitions",
+    "requeriments": "Git and development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "122",
+    "courseId": "41",
+    "dateStart": "2028-11-20T08:00:00Z",
+    "title": "Build, Test, and Deploy Pipelines",
+    "teacherName": "Sofía López",
+    "summary": "Automating build, test, and deployment stages with GitHub Actions workflows",
+    "requeriments": "Completed GitHub Actions Workflows session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "123",
+    "courseId": "41",
+    "dateStart": "2028-11-27T08:00:00Z",
+    "title": "Matrix Builds and Advanced Features",
+    "teacherName": "Sofía López",
+    "summary": "Using matrix strategies, reusable workflows, and secrets management",
+    "requeriments": "Completed Build, Test, Deploy session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "124",
+    "courseId": "42",
+    "dateStart": "2028-12-04T10:15:00Z",
+    "title": "AWS EC2 and Compute Services",
+    "teacherName": "Roberto Castillo",
+    "summary": "Deploying applications on EC2, auto-scaling groups, and load balancers",
+    "requeriments": "Cloud computing fundamentals",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "125",
+    "courseId": "42",
+    "dateStart": "2028-12-11T10:15:00Z",
+    "title": "AWS Lambda and Serverless",
+    "teacherName": "Roberto Castillo",
+    "summary": "Building serverless applications with Lambda functions, API Gateway, and event triggers",
+    "requeriments": "Completed AWS EC2 session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "126",
+    "courseId": "42",
+    "dateStart": "2028-12-18T10:15:00Z",
+    "title": "S3 and CloudFront CDN",
+    "teacherName": "Roberto Castillo",
+    "summary": "Static hosting with S3, CloudFront CDN distribution, and edge caching strategies",
+    "requeriments": "Completed AWS Lambda session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "127",
+    "courseId": "43",
+    "dateStart": "2029-01-02T12:45:00Z",
+    "title": "Terraform Basics and HCL",
+    "teacherName": "Valentina Ríos",
+    "summary": "Getting started with Terraform, HCL syntax, and infrastructure as code concepts",
+    "requeriments": "Cloud platform experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "128",
+    "courseId": "43",
+    "dateStart": "2029-01-09T12:45:00Z",
+    "title": "Managing Cloud Resources",
+    "teacherName": "Valentina Ríos",
+    "summary": "Provisioning AWS resources with Terraform: VPC, EC2, RDS, and IAM",
+    "requeriments": "Completed Terraform Basics session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "129",
+    "courseId": "43",
+    "dateStart": "2029-01-16T12:45:00Z",
+    "title": "State Management and Modules",
+    "teacherName": "Valentina Ríos",
+    "summary": "Managing Terraform state, remote backends, and creating reusable modules",
+    "requeriments": "Completed Managing Cloud Resources session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "130",
+    "courseId": "44",
+    "dateStart": "2029-01-23T09:30:00Z",
+    "title": "Prometheus Metrics and Alerting",
+    "teacherName": "Pablo Herrera",
+    "summary": "Setting up Prometheus for metrics collection, alerting rules, and Alertmanager",
+    "requeriments": "Infrastructure and operations experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "131",
+    "courseId": "44",
+    "dateStart": "2029-01-30T09:30:00Z",
+    "title": "Grafana Dashboards",
+    "teacherName": "Pablo Herrera",
+    "summary": "Creating stunning dashboards with Grafana, data sources, and panel configurations",
+    "requeriments": "Completed Prometheus Metrics session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "132",
+    "courseId": "44",
+    "dateStart": "2029-02-06T09:30:00Z",
+    "title": "ELK Stack for Logging",
+    "teacherName": "Pablo Herrera",
+    "summary": "Centralized logging with Elasticsearch, Logstash, and Kibana stack",
+    "requeriments": "Completed Grafana Dashboards session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "133",
+    "courseId": "45",
+    "dateStart": "2029-02-13T11:00:00Z",
+    "title": "Clean Architecture Principles",
+    "teacherName": "Elena Guzmán",
+    "summary": "Understanding clean architecture layers, dependency rule, and separation of concerns",
+    "requeriments": "Intermediate frontend development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "134",
+    "courseId": "45",
+    "dateStart": "2029-02-20T11:00:00Z",
+    "title": "Clean Architecture in Angular",
+    "teacherName": "Elena Guzmán",
+    "summary": "Implementing use cases, entities, and repositories in Angular applications",
+    "requeriments": "Completed Clean Architecture Principles session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "135",
+    "courseId": "45",
+    "dateStart": "2029-02-27T11:00:00Z",
+    "title": "Clean Architecture in React",
+    "teacherName": "Elena Guzmán",
+    "summary": "Applying clean architecture patterns in React with hooks, contexts, and custom hooks",
+    "requeriments": "Completed Clean Architecture in Angular session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "136",
+    "courseId": "46",
+    "dateStart": "2029-03-06T14:15:00Z",
+    "title": "Creational Design Patterns",
+    "teacherName": "María Fernández",
+    "summary": "Implementing Singleton, Factory, Builder, and Prototype patterns in TypeScript",
+    "requeriments": "TypeScript programming experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "137",
+    "courseId": "46",
+    "dateStart": "2029-03-13T14:15:00Z",
+    "title": "Structural Design Patterns",
+    "teacherName": "María Fernández",
+    "summary": "Implementing Adapter, Decorator, Facade, and Proxy patterns in TypeScript",
+    "requeriments": "Completed Creational Design Patterns session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "138",
+    "courseId": "46",
+    "dateStart": "2029-03-20T14:15:00Z",
+    "title": "Behavioral Design Patterns",
+    "teacherName": "María Fernández",
+    "summary": "Implementing Observer, Strategy, Command, and State patterns in TypeScript",
+    "requeriments": "Completed Structural Design Patterns session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "139",
+    "courseId": "47",
+    "dateStart": "2029-03-27T08:30:00Z",
+    "title": "DDD Strategic Design",
+    "teacherName": "Luis Vargas",
+    "summary": "Understanding bounded contexts, ubiquitous language, and domain modeling",
+    "requeriments": "Software architecture experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "140",
+    "courseId": "47",
+    "dateStart": "2029-04-03T08:30:00Z",
+    "title": "Aggregates and Domain Events",
+    "teacherName": "Luis Vargas",
+    "summary": "Designing aggregates, entities, value objects, and domain events in DDD",
+    "requeriments": "Completed DDD Strategic Design session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "141",
+    "courseId": "47",
+    "dateStart": "2029-04-10T08:30:00Z",
+    "title": "Implementing DDD in Node.js",
+    "teacherName": "Luis Vargas",
+    "summary": "Practical implementation of DDD patterns with Node.js, Express, and TypeScript",
+    "requeriments": "Completed Aggregates and Domain Events session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "142",
+    "courseId": "48",
+    "dateStart": "2029-04-17T10:00:00Z",
+    "title": "Event-Driven Architecture Fundamentals",
+    "teacherName": "Roberto Castillo",
+    "summary": "Understanding events, event sourcing, CQRS, and message-driven architectures",
+    "requeriments": "Backend architecture experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "143",
+    "courseId": "48",
+    "dateStart": "2029-04-24T10:00:00Z",
+    "title": "Apache Kafka Essentials",
+    "teacherName": "Roberto Castillo",
+    "summary": "Setting up Kafka, topics, partitions, producers, and consumers",
+    "requeriments": "Completed Event-Driven Architecture session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "144",
+    "courseId": "48",
+    "dateStart": "2029-05-01T10:00:00Z",
+    "title": "Event Sourcing and CQRS Implementation",
+    "teacherName": "Roberto Castillo",
+    "summary": "Implementing event sourcing patterns and CQRS with Kafka and Node.js",
+    "requeriments": "Completed Apache Kafka session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "145",
+    "courseId": "49",
+    "dateStart": "2029-05-08T12:30:00Z",
+    "title": "Advanced Git Workflows",
+    "teacherName": "Carlos Méndez",
+    "summary": "Mastering Git Flow, GitHub Flow, and trunk-based development strategies",
+    "requeriments": "Basic Git knowledge",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "146",
+    "courseId": "49",
+    "dateStart": "2029-05-15T12:30:00Z",
+    "title": "Rebasing and History Management",
+    "teacherName": "Carlos Méndez",
+    "summary": "Interactive rebasing, cherry-picking, squashing, and maintaining clean Git history",
+    "requeriments": "Completed Advanced Git Workflows session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "147",
+    "courseId": "49",
+    "dateStart": "2029-05-22T12:30:00Z",
+    "title": "Collaboration and Code Review",
+    "teacherName": "Carlos Méndez",
+    "summary": "Effective pull requests, code review best practices, and resolving merge conflicts",
+    "requeriments": "Completed Rebasing and History session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "148",
+    "courseId": "50",
+    "dateStart": "2029-05-29T09:00:00Z",
+    "title": "OWASP Top 10 Overview",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Understanding the most critical web application security risks and mitigation strategies",
+    "requeriments": "Web development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "149",
+    "courseId": "50",
+    "dateStart": "2029-06-05T09:00:00Z",
+    "title": "XSS and CSRF Prevention",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Preventing cross-site scripting and cross-site request forgery attacks in web apps",
+    "requeriments": "Completed OWASP Top 10 session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "150",
+    "courseId": "50",
+    "dateStart": "2029-06-12T09:00:00Z",
+    "title": "Security Headers and Best Practices",
+    "teacherName": "Ana Rodríguez",
+    "summary": "Implementing security headers, Content Security Policy, and secure coding practices",
+    "requeriments": "Completed XSS and CSRF session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "151",
+    "courseId": "51",
+    "dateStart": "2029-06-19T11:15:00Z",
+    "title": "Webpack Configuration Deep Dive",
+    "teacherName": "Diego Ramírez",
+    "summary": "Understanding Webpack core concepts: entry, output, loaders, and plugins",
+    "requeriments": "Frontend development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "152",
+    "courseId": "51",
+    "dateStart": "2029-06-26T11:15:00Z",
+    "title": "Vite and ESBuild",
+    "teacherName": "Diego Ramírez",
+    "summary": "Migrating to Vite, understanding ESBuild, and leveraging fast HMR",
+    "requeriments": "Completed Webpack Configuration session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "153",
+    "courseId": "51",
+    "dateStart": "2029-07-03T11:15:00Z",
+    "title": "Advanced Bundle Optimization",
+    "teacherName": "Diego Ramírez",
+    "summary": "Code splitting, tree shaking, lazy loading, and bundle analysis techniques",
+    "requeriments": "Completed Vite and ESBuild session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "154",
+    "courseId": "52",
+    "dateStart": "2029-07-10T14:00:00Z",
+    "title": "Electron Application Architecture",
+    "teacherName": "Sofía López",
+    "summary": "Understanding Electron main and renderer processes, IPC communication",
+    "requeriments": "Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "155",
+    "courseId": "52",
+    "dateStart": "2029-07-17T14:00:00Z",
+    "title": "Integrating Angular with Electron",
+    "teacherName": "Sofía López",
+    "summary": "Embedding Angular apps in Electron, native APIs integration, and window management",
+    "requeriments": "Completed Electron Architecture session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "156",
+    "courseId": "52",
+    "dateStart": "2029-07-24T14:00:00Z",
+    "title": "Building and Packaging Desktop Apps",
+    "teacherName": "Sofía López",
+    "summary": "Packaging Electron apps for Windows, macOS, and Linux with auto-update support",
+    "requeriments": "Completed Angular with Electron session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "157",
+    "courseId": "53",
+    "dateStart": "2029-07-31T08:45:00Z",
+    "title": "Ionic Framework Setup and Basics",
+    "teacherName": "Valentina Ríos",
+    "summary": "Setting up Ionic with Angular, understanding UI components, and navigation",
+    "requeriments": "Angular development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "158",
+    "courseId": "53",
+    "dateStart": "2029-08-07T08:45:00Z",
+    "title": "Native Device Features with Capacitor",
+    "teacherName": "Valentina Ríos",
+    "summary": "Accessing camera, GPS, storage, and push notifications with Capacitor plugins",
+    "requeriments": "Completed Ionic Framework Setup session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "159",
+    "courseId": "53",
+    "dateStart": "2029-08-14T08:45:00Z",
+    "title": "Building and Publishing Mobile Apps",
+    "teacherName": "Valentina Ríos",
+    "summary": "Building Ionic apps for iOS and Android, App Store and Google Play deployment",
+    "requeriments": "Completed Native Device Features session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "160",
+    "courseId": "54",
+    "dateStart": "2029-08-21T10:30:00Z",
+    "title": "System Design Fundamentals",
+    "teacherName": "Pablo Herrera",
+    "summary": "Approaching system design problems, scalability concepts, and design trade-offs",
+    "requeriments": "Software development experience",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "161",
+    "courseId": "54",
+    "dateStart": "2029-08-28T10:30:00Z",
+    "title": "Data Structures and Algorithms Review",
+    "teacherName": "Pablo Herrera",
+    "summary": "Refreshing arrays, linked lists, trees, graphs, and common algorithms for interviews",
+    "requeriments": "Completed System Design Fundamentals session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  },
+  {
+    "id": "162",
+    "courseId": "54",
+    "dateStart": "2029-09-04T10:30:00Z",
+    "title": "Mock Interviews and Behavioral Preparation",
+    "teacherName": "Pablo Herrera",
+    "summary": "Practice mock technical interviews, behavioral questions, and salary negotiation",
+    "requeriments": "Completed Data Structures and Algorithms session",
+    "createdAt": "2026-07-05T18:00:00Z"
+  }
+]

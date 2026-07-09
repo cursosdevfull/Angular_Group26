@@ -1,1 +1,39 @@
-<p>course-form works!</p>
+<mat-dialog-content>
+  <mat-toolbar>
+    <h2 mat-dialog-title>{{ title() }}</h2>
+    <button matIconButton mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <form>
+    <div class="fields">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" [formField]="courseForm.name" />
+      </mat-form-field>
+      <cdev-lib-error-message [control]="courseForm.name()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput [formField]="courseForm.description"></textarea>
+      </mat-form-field>
+      <cdev-lib-error-message [control]="courseForm.description()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Price</mat-label>
+        <input matInput type="number" [formField]="courseForm.price" />
+      </mat-form-field>
+      <cdev-lib-error-message [control]="courseForm.price()"></cdev-lib-error-message>
+    </div>
+    <div matDialogActions>
+      <button
+        matButton="filled"
+        type="button"
+        [disabled]="courseForm().invalid()"
+        (click)="action()"
+      >
+        {{ label() }}
+      </button>
+      <button matButton="outlined" type="button" mat-dialog-close>Cancel</button>
+    </div>
+  </form>
+</mat-dialog-content>
