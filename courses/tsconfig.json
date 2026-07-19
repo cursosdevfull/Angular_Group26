@@ -7,18 +7,12 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "lib": [
-        "./dist/lib"
-      ],
-      "@backoffice/features/*": [
-        "./projects/backoffice/src/app/features/*"
-      ],
-      "@backoffice/core/*": [
-        "./projects/backoffice/src/app/core/*"
-      ],
-      "@backoffice/shared/*": [
-        "./projects/backoffice/src/app/shared/*"
-      ]
+      "@backoffice/features/*": ["./projects/backoffice/src/app/features/*"],
+      "@backoffice/core/*": ["./projects/backoffice/src/app/core/*"],
+      "@backoffice/shared/*": ["./projects/backoffice/src/app/shared/*"],
+      "@store-front/features/*": ["./projects/store-front/src/app/features/*"],
+      "@store-front/core/*": ["./projects/store-front/src/app/core/*"],
+      "@store-front/shared/*": ["./projects/store-front/src/app/shared/*"]
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

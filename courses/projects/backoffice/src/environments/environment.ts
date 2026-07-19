@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'https://api.example.com',
+  apiUrl: 'https://plz1d3nw-3000.brs.devtunnels.ms',
   pageSize: 30,
 };

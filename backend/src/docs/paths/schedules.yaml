@@ -1,0 +1,138 @@
+/api/schedules:
+  get:
+    tags:
+      - Schedules
+    summary: Listar horarios
+    description: Retorna una lista paginada de horarios. Opcionalmente filtrados por courseId.
+    parameters:
+      - name: page
+        in: query
+        schema:
+          type: integer
+          default: 1
+        description: Número de página
+      - name: limit
+        in: query
+        schema:
+          type: integer
+          default: 10
+        description: Cantidad de elementos por página
+      - name: courseId
+        in: query
+        schema:
+          type: string
+        description: Filtrar por ID de curso
+    responses:
+      "200":
+        description: Lista de horarios
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleListResponse"
+  post:
+    tags:
+      - Schedules
+    summary: Crear horario
+    description: Crea un nuevo horario para un curso.
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ScheduleInput"
+    responses:
+      "201":
+        description: Horario creado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleResponse"
+      "400":
+        description: Datos inválidos
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+
+/api/schedules/{id}:
+  get:
+    tags:
+      - Schedules
+    summary: Obtener horario por ID
+    description: Retorna un horario por su ID.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del horario
+    responses:
+      "200":
+        description: Horario encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleResponse"
+      "404":
+        description: Horario no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+  put:
+    tags:
+      - Schedules
+    summary: Actualizar horario
+    description: Actualiza un horario existente.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del horario
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ScheduleInput"
+    responses:
+      "200":
+        description: Horario actualizado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleResponse"
+      "404":
+        description: Horario no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+  delete:
+    tags:
+      - Schedules
+    summary: Eliminar horario
+    description: Elimina un horario por su ID.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del horario
+    responses:
+      "200":
+        description: Horario eliminado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleResponse"
+      "404":
+        description: Horario no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"

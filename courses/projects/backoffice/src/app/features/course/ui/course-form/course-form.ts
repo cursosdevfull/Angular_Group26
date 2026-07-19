@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CourseProperties } from '../../domain';
 import { form, FormField, min, required, SchemaPathTree } from '@angular/forms/signals';
-import { ErrorMessage } from 'lib';
+import { ErrorMessage } from 'curso-angular-26';
 
 @Component({
   selector: 'cdev-course-form',

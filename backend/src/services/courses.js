@@ -22,7 +22,7 @@ function getAll(page = 1, limit = 10) {
   const courses = readCourses();
   const total = courses.length;
   const totalPages = Math.ceil(total / limit);
-  const startIndex = page * limit;
+  const startIndex = (page - 1) * limit;
   const endIndex = startIndex + limit;
   const data = courses.slice(startIndex, endIndex);
 
@@ -107,4 +107,13 @@ function remove(id) {
   return true;
 }
 
-module.exports = { getAll, getById, create, update, remove };
+/**
+ * Get all courses without pagination, returning only id and name
+ * @returns {Array<{ id: string, name: string }>}
+ */
+function getAllList() {
+  const courses = readCourses();
+  return courses.map(({ id, name }) => ({ id, name }));
+}
+
+module.exports = { getAll, getAllList, getById, create, update, remove };

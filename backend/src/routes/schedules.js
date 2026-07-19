@@ -8,8 +8,8 @@ const schedulesService = require("../services/schedules");
  */
 router.get("/", (req, res) => {
   console.log("Received request to fetch schedules with query:", req.query);
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 10;
+  const page = parseInt(req.query.page) ?? 1;
+  const limit = parseInt(req.query.limit) ?? 10;
   const courseId = req.query.courseId || null;
 
   const result = schedulesService.getAll(page, limit, courseId);

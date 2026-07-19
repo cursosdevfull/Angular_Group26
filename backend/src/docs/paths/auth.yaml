@@ -1,0 +1,26 @@
+/api/auth/login:
+  post:
+    tags:
+      - Auth
+    summary: Iniciar sesión
+    description: Autentica un usuario con email y contraseña. Retorna un token JWT en el campo message para acceder a los endpoints protegidos.
+    security: []
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/LoginRequest"
+    responses:
+      "200":
+        description: Login exitoso
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginResponse"
+      "401":
+        description: Credenciales inválidas
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"

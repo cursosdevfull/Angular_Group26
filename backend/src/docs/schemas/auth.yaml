@@ -1,0 +1,25 @@
+LoginRequest:
+  type: object
+  required:
+    - email
+    - password
+  properties:
+    email:
+      type: string
+      format: email
+      example: "admin@example.com"
+    password:
+      type: string
+      format: password
+      example: "123456"
+
+LoginResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS", "ERROR"]
+    code:
+      type: integer
+    message:
+      type: string

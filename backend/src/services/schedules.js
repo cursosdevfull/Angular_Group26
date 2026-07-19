@@ -2,9 +2,15 @@ const path = require("path");
 const fs = require("fs");
 
 const schedulesFilePath = path.join(__dirname, "..", "data", "schedules.json");
+const coursesFilePath = path.join(__dirname, "..", "data", "courses.json");
 
 function readSchedules() {
   const raw = fs.readFileSync(schedulesFilePath, "utf-8");
+  return JSON.parse(raw);
+}
+
+function readCourses() {
+  const raw = fs.readFileSync(coursesFilePath, "utf-8");
   return JSON.parse(raw);
 }
 
@@ -25,6 +31,7 @@ function writeSchedules(schedules) {
  */
 function getAll(page = 1, limit = 10, courseId = null) {
   let schedules = readSchedules();
+  const courses = readCourses();
 
   if (courseId) {
     schedules = schedules.filter((s) => s.courseId === courseId);
@@ -34,7 +41,13 @@ function getAll(page = 1, limit = 10, courseId = null) {
   const totalPages = Math.ceil(total / limit);
   const startIndex = (page - 1) * limit;
   const endIndex = startIndex + limit;
-  const data = schedules.slice(startIndex, endIndex);
+  const data = schedules.slice(startIndex, endIndex).map((schedule) => {
+    const course = courses.find((c) => c.id === schedule.courseId);
+    return {
+      ...schedule,
+      courseName: course ? course.name : "",
+    };
+  });
 
   return {
     data,

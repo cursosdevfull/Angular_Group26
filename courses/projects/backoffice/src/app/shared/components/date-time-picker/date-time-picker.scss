@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.date-time-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .date-time-picker {
+    grid-template-columns: 1fr;
+  }
+}

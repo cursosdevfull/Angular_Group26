@@ -1,0 +1,18 @@
+/api/health:
+  get:
+    tags:
+      - Health
+    summary: Health check
+    description: Verifica que el servidor esté funcionando correctamente.
+    security: []
+    responses:
+      "200":
+        description: Servidor funcionando
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  example: UP

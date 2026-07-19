@@ -1,0 +1,25 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 24
+  pre_build:
+    commands:
+      - echo "Installing dependencies..."
+      - cd courses
+      - npm ci
+  build:
+    commands:
+      - echo "Building the project..."
+      - npm run build --project backoffice --configuration production
+  post_build:
+    commands:
+      - echo "Build completed successfully."
+      - aws s3 rm s3://course-angular26 --recursive
+      - aws s3 cp dist/backoffice/browser s3://course-angular26 --delete
+      - aws cloudfront create-invalidation --distribution-id E2P4NWGWHQGY22 --paths "/*"
+artifacts:
+  name: course-angular26
+  files:
+    - "**/*"
+  base-directory: dist/backoffice/browser

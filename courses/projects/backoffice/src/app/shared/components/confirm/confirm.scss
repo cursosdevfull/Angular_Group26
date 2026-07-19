@@ -1,6 +1,7 @@
 $primary-color: #3b82f6;
 $fontSizeTitle: 18px;
-$fontSizeMessage: 15px;
+$fontSizeMessage: 17px;
+$color: #ffffff;
 
 mat-toolbar {
   background-color: $primary-color;
@@ -8,6 +9,7 @@ mat-toolbar {
 
 h2 {
   font-size: $fontSizeTitle;
+  color: $color;
 }
 
 h3 {

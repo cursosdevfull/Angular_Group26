@@ -1,0 +1,60 @@
+Course:
+  type: object
+  properties:
+    id:
+      type: string
+      example: "1"
+    name:
+      type: string
+      example: "Angular Avanzado"
+    description:
+      type: string
+      example: "Curso avanzado de Angular"
+    price:
+      type: number
+      example: 99.99
+
+CourseInput:
+  type: object
+  required:
+    - name
+  properties:
+    name:
+      type: string
+      example: "Angular Avanzado"
+    description:
+      type: string
+      example: "Curso avanzado de Angular"
+    price:
+      type: number
+      example: 99.99
+
+CourseListResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      type: array
+      items:
+        $ref: "#/components/schemas/Course"
+    page:
+      type: integer
+    limit:
+      type: integer
+    total:
+      type: integer
+
+CourseResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      $ref: "#/components/schemas/Course"

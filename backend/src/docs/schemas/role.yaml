@@ -1,0 +1,42 @@
+Role:
+  type: object
+  properties:
+    id:
+      type: string
+      example: "1"
+    name:
+      type: string
+      example: "Administrador"
+
+RoleInput:
+  type: object
+  required:
+    - name
+  properties:
+    name:
+      type: string
+      example: "Administrador"
+
+RoleListResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      type: array
+      items:
+        $ref: "#/components/schemas/Role"
+
+RoleResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      $ref: "#/components/schemas/Role"

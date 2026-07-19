@@ -1,0 +1,132 @@
+@if (loading()) {
+  <div class="loading-container">
+    <mat-spinner diameter="48"></mat-spinner>
+    <p>Cargando curso...</p>
+  </div>
+} @else if (error()) {
+  <div class="error-container">
+    <mat-icon class="error-icon">error_outline</mat-icon>
+    <h2>Curso no encontrado</h2>
+    <p>{{ error() }}</p>
+    <a matRaisedButton routerLink="/courses">
+      <mat-icon>arrow_back</mat-icon>
+      Volver a Cursos
+    </a>
+  </div>
+} @else if (course()) {
+  <div class="detail-page">
+    <a matButton class="back-link" routerLink="/courses">
+      <mat-icon>arrow_back</mat-icon>
+      Todos los cursos
+    </a>
+
+    <div class="detail-layout">
+      <div class="detail-main">
+        <div class="course-banner" [style.background]="getColor(course()!.name)">
+          <span class="banner-initials">{{ getInitials(course()!.name) }}</span>
+        </div>
+
+        <h1 class="course-title">{{ course()!.name }}</h1>
+
+        <mat-chip-set class="course-tags">
+          <mat-chip class="chip-price" highlighted color="primary">
+            {{ course()!.price | currency: 'USD' : 'symbol' : '1.2-2' }}
+          </mat-chip>
+          <mat-chip>
+            <mat-icon matChipAvatar>calendar_today</mat-icon>
+            {{ course()!.createdAt | date: 'longDate' }}
+          </mat-chip>
+        </mat-chip-set>
+
+        <mat-divider></mat-divider>
+
+        <div class="course-description-full">
+          <h2>Descripción del Curso</h2>
+          <p>{{ course()!.description }}</p>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="course-curriculum">
+          <h2>Lo que aprenderás</h2>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Contenido actualizado y relevante</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Proyectos prácticos incluidos</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Acceso de por vida al material</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Certificado de finalización</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Soporte de instructores expertos</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>Aprendizaje a tu propio ritmo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="detail-sidebar">
+        <mat-card class="sidebar-card">
+          <mat-card-content>
+            <div class="price-section">
+              <span class="price-label">Precio del curso</span>
+              <span class="price-value">{{
+                course()!.price | currency: 'USD' : 'symbol' : '1.2-2'
+              }}</span>
+            </div>
+
+            <button matFlatButton class="cta-button" color="primary">
+              <mat-icon>shopping_cart</mat-icon>
+              Inscribirse Ahora
+            </button>
+
+            <button matStrokedButton class="cta-button-secondary">
+              <mat-icon>bookmark_border</mat-icon>
+              Guardar para después
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <div class="course-meta">
+              <h3>Detalles del Curso</h3>
+              <div class="meta-item">
+                <mat-icon>calendar_today</mat-icon>
+                <div>
+                  <span class="meta-label">Fecha de publicación</span>
+                  <span class="meta-value">{{ course()!.createdAt | date: 'mediumDate' }}</span>
+                </div>
+              </div>
+              <div class="meta-item">
+                <mat-icon>bar_chart</mat-icon>
+                <div>
+                  <span class="meta-label">Nivel</span>
+                  <span class="meta-value">Intermedio</span>
+                </div>
+              </div>
+              <div class="meta-item">
+                <mat-icon>translate</mat-icon>
+                <div>
+                  <span class="meta-label">Idioma</span>
+                  <span class="meta-value">Español</span>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </aside>
+    </div>
+  </div>
+}

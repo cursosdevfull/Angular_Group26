@@ -16,6 +16,15 @@ router.get("/", (req, res) => {
 });
 
 /**
+ * GET /api/courses/list
+ * Returns all courses without pagination, only id and name fields
+ */
+router.get("/list", (req, res) => {
+  const courses = coursesService.getAllList();
+  res.json({ status: "SUCCESS", code: 200, data: courses });
+});
+
+/**
  * GET /api/courses/:id
  * Returns a single course by id
  */

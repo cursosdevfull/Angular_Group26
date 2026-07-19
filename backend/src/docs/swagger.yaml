@@ -1,0 +1,747 @@
+openapi: 3.0.3
+info:
+  title: Backend Auth API
+  description: API REST con autenticación JWT para gestión de cursos, horarios y roles.
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+
+servers:
+  - url: http://localhost:{port}
+    description: Servidor local
+    variables:
+      port:
+        default: "3000"
+        description: Puerto del servidor (configurable vía PORT en .env)
+
+tags:
+  - name: Auth
+    description: Endpoints de autenticación
+  - name: Courses
+    description: Gestión de cursos
+  - name: Schedules
+    description: Gestión de horarios
+  - name: Roles
+    description: Gestión de roles
+  - name: Health
+    description: Health check del servidor
+
+paths:
+  /api/auth/login:
+    post:
+      tags:
+        - Auth
+      summary: Iniciar sesión
+      description: Autentica un usuario con email y contraseña. Retorna un token JWT en el campo message para acceder a los endpoints protegidos.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginRequest"
+      responses:
+        "200":
+          description: Login exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+        "401":
+          description: Credenciales inválidas
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/courses:
+    get:
+      tags:
+        - Courses
+      summary: Listar cursos
+      description: Retorna una lista paginada de cursos.
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+          description: Número de página
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+          description: Cantidad de elementos por página
+      responses:
+        "200":
+          description: Lista de cursos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseListResponse"
+    post:
+      tags:
+        - Courses
+      summary: Crear curso
+      description: Crea un nuevo curso.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CourseInput"
+      responses:
+        "201":
+          description: Curso creado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseResponse"
+        "400":
+          description: Datos inválidos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/courses/list:
+    get:
+      tags:
+        - Courses
+      summary: Listar cursos (solo id y nombre)
+      description: Retorna la lista completa de cursos sin paginación, incluyendo solo los campos id y name.
+      responses:
+        "200":
+          description: Lista de cursos simplificada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseSimpleListResponse"
+
+  /api/courses/{id}:
+    get:
+      tags:
+        - Courses
+      summary: Obtener curso por ID
+      description: Retorna un curso por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del curso
+      responses:
+        "200":
+          description: Curso encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseResponse"
+        "404":
+          description: Curso no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    put:
+      tags:
+        - Courses
+      summary: Actualizar curso
+      description: Actualiza un curso existente.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del curso
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CourseInput"
+      responses:
+        "200":
+          description: Curso actualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseResponse"
+        "404":
+          description: Curso no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    delete:
+      tags:
+        - Courses
+      summary: Eliminar curso
+      description: Elimina un curso por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del curso
+      responses:
+        "200":
+          description: Curso eliminado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseResponse"
+        "404":
+          description: Curso no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/schedules:
+    get:
+      tags:
+        - Schedules
+      summary: Listar horarios
+      description: Retorna una lista paginada de horarios. Opcionalmente filtrados por courseId.
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+          description: Número de página
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+          description: Cantidad de elementos por página
+        - name: courseId
+          in: query
+          schema:
+            type: string
+          description: Filtrar por ID de curso
+      responses:
+        "200":
+          description: Lista de horarios
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleListResponse"
+    post:
+      tags:
+        - Schedules
+      summary: Crear horario
+      description: Crea un nuevo horario para un curso.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleInput"
+      responses:
+        "201":
+          description: Horario creado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleResponse"
+        "400":
+          description: Datos inválidos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/schedules/{id}:
+    get:
+      tags:
+        - Schedules
+      summary: Obtener horario por ID
+      description: Retorna un horario por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del horario
+      responses:
+        "200":
+          description: Horario encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleResponse"
+        "404":
+          description: Horario no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    put:
+      tags:
+        - Schedules
+      summary: Actualizar horario
+      description: Actualiza un horario existente.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del horario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScheduleInput"
+      responses:
+        "200":
+          description: Horario actualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleResponse"
+        "404":
+          description: Horario no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    delete:
+      tags:
+        - Schedules
+      summary: Eliminar horario
+      description: Elimina un horario por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del horario
+      responses:
+        "200":
+          description: Horario eliminado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleResponse"
+        "404":
+          description: Horario no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/roles:
+    get:
+      tags:
+        - Roles
+      summary: Listar roles
+      description: Retorna la lista de todos los roles disponibles.
+      responses:
+        "200":
+          description: Lista de roles
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoleListResponse"
+    post:
+      tags:
+        - Roles
+      summary: Crear rol
+      description: Crea un nuevo rol.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleInput"
+      responses:
+        "201":
+          description: Rol creado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoleResponse"
+        "400":
+          description: Datos inválidos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/roles/{id}:
+    get:
+      tags:
+        - Roles
+      summary: Obtener rol por ID
+      description: Retorna un rol por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del rol
+      responses:
+        "200":
+          description: Rol encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoleResponse"
+        "404":
+          description: Rol no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    put:
+      tags:
+        - Roles
+      summary: Actualizar rol
+      description: Actualiza un rol existente.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del rol
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleInput"
+      responses:
+        "200":
+          description: Rol actualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoleResponse"
+        "404":
+          description: Rol no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    delete:
+      tags:
+        - Roles
+      summary: Eliminar rol
+      description: Elimina un rol por su ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del rol
+      responses:
+        "200":
+          description: Rol eliminado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoleResponse"
+        "404":
+          description: Rol no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /api/health:
+    get:
+      tags:
+        - Health
+      summary: Health check
+      description: Verifica que el servidor esté funcionando correctamente.
+      security: []
+      responses:
+        "200":
+          description: Servidor funcionando
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: UP
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: |
+        Token JWT obtenido al hacer login en /api/auth/login.
+        El token se envía en el header Authorization: Bearer <token>.
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["ERROR"]
+        code:
+          type: integer
+        message:
+          type: string
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: "admin@example.com"
+        password:
+          type: string
+          format: password
+          example: "123456"
+
+    LoginResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS", "ERROR"]
+        code:
+          type: integer
+        message:
+          type: string
+
+    Course:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1"
+        name:
+          type: string
+          example: "Angular Avanzado"
+        description:
+          type: string
+          example: "Curso avanzado de Angular"
+        price:
+          type: number
+          example: 99.99
+
+    CourseInput:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          example: "Angular Avanzado"
+        description:
+          type: string
+          example: "Curso avanzado de Angular"
+        price:
+          type: number
+          example: 99.99
+
+    CourseListResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Course"
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
+
+    CourseResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          $ref: "#/components/schemas/Course"
+
+    CourseSimple:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1"
+        name:
+          type: string
+          example: "Angular Avanzado"
+
+    CourseSimpleListResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/CourseSimple"
+
+    Schedule:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1"
+        courseId:
+          type: string
+          example: "1"
+        courseName:
+          type: string
+          example: "Angular Fundamentals"
+        dateStart:
+          type: string
+          format: date
+          example: "2025-01-15"
+        title:
+          type: string
+          example: "Horario Matutino"
+        teacherName:
+          type: string
+          example: "Juan Pérez"
+        summary:
+          type: string
+          example: "Resumen del horario"
+        requeriments:
+          type: string
+          example: "Conocimientos básicos de programación"
+
+    ScheduleInput:
+      type: object
+      required:
+        - courseId
+        - dateStart
+        - title
+        - teacherName
+      properties:
+        courseId:
+          type: string
+          example: "1"
+        dateStart:
+          type: string
+          format: date
+          example: "2025-01-15"
+        title:
+          type: string
+          example: "Horario Matutino"
+        teacherName:
+          type: string
+          example: "Juan Pérez"
+        summary:
+          type: string
+          example: "Resumen del horario"
+        requeriments:
+          type: string
+          example: "Conocimientos básicos de programación"
+
+    ScheduleListResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Schedule"
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
+
+    ScheduleResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          $ref: "#/components/schemas/Schedule"
+
+    Role:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1"
+        name:
+          type: string
+          example: "Administrador"
+
+    RoleInput:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          example: "Administrador"
+
+    RoleListResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Role"
+
+    RoleResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: ["SUCCESS"]
+        code:
+          type: integer
+        data:
+          $ref: "#/components/schemas/Role"
+
+security:
+  - BearerAuth: []

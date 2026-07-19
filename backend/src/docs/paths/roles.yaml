@@ -1,0 +1,120 @@
+/api/roles:
+  get:
+    tags:
+      - Roles
+    summary: Listar roles
+    description: Retorna la lista de todos los roles disponibles.
+    responses:
+      "200":
+        description: Lista de roles
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleListResponse"
+  post:
+    tags:
+      - Roles
+    summary: Crear rol
+    description: Crea un nuevo rol.
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/RoleInput"
+    responses:
+      "201":
+        description: Rol creado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleResponse"
+      "400":
+        description: Datos inválidos
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+
+/api/roles/{id}:
+  get:
+    tags:
+      - Roles
+    summary: Obtener rol por ID
+    description: Retorna un rol por su ID.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del rol
+    responses:
+      "200":
+        description: Rol encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleResponse"
+      "404":
+        description: Rol no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+  put:
+    tags:
+      - Roles
+    summary: Actualizar rol
+    description: Actualiza un rol existente.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del rol
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/RoleInput"
+    responses:
+      "200":
+        description: Rol actualizado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleResponse"
+      "404":
+        description: Rol no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"
+  delete:
+    tags:
+      - Roles
+    summary: Eliminar rol
+    description: Elimina un rol por su ID.
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID del rol
+    responses:
+      "200":
+        description: Rol eliminado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoleResponse"
+      "404":
+        description: Rol no encontrado
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ErrorResponse"

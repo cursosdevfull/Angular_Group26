@@ -1,0 +1,65 @@
+<header class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">🚀 Plataforma de Aprendizaje</span>
+    <h1>Impulsa tu Carrera Tech</h1>
+    <p>
+      Descubre cursos creados por expertos de la industria. Aprende a tu ritmo con contenido
+      actualizado y proyectos prácticos.
+    </p>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-number">{{ dataSource().length }}</span>
+      <span class="stat-label">Cursos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">54</span>
+      <span class="stat-label">Instructores</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">12k+</span>
+      <span class="stat-label">Estudiantes</span>
+    </div>
+  </div>
+</header>
+
+<section class="courses-section">
+  <div class="section-header">
+    <h2>Todos los Cursos</h2>
+    <p>Encuentra el curso perfecto para ti</p>
+  </div>
+
+  @if (loading()) {
+    <div class="loading-container">
+      <mat-spinner diameter="48"></mat-spinner>
+      <p>Cargando cursos...</p>
+    </div>
+  } @else {
+    <div class="courses-grid">
+      @for (course of dataSource(); track course.id; let idx = $index) {
+        <mat-card class="course-card" appearance="outlined" (click)="viewDetail(course)">
+          <div class="course-image" [style.background]="getRandomColor(idx)">
+            <span class="course-initials">{{ getInitials(course.name) }}</span>
+            <div class="course-price-badge">\${{ course.price }}</div>
+          </div>
+          <mat-card-content>
+            <h3 class="course-name">{{ course.name }}</h3>
+            <p class="course-description">{{ course.description }}</p>
+            <div class="course-footer">
+              <span class="course-date">
+                <mat-icon class="icon-small">calendar_today</mat-icon>
+                {{ course.createdAt | date: 'MMM yyyy' }}
+              </span>
+            </div>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button matButton color="primary">
+              Ver Curso
+              <mat-icon>arrow_forward</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      }
+    </div>
+  }
+</section>

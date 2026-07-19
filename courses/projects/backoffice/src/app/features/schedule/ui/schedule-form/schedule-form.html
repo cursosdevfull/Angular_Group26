@@ -1,1 +1,62 @@
-<p>schedule-form works!</p>
+<mat-dialog-content>
+  <mat-toolbar>
+    <h2 mat-dialog-title>{{ title() }}</h2>
+    <button matIconButton mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <form>
+    <div class="fields">
+      <mat-form-field>
+        <mat-label>Course</mat-label>
+        <mat-select [formField]="scheduleForm.courseId">
+          @for (course of courses(); track course.id) {
+            <mat-option [value]="course.id">{{ course.name }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+      <cdev-lib-error-message [control]="scheduleForm.courseId()"></cdev-lib-error-message>
+      <cdev-date-time-picker
+        [label]="'Date Start'"
+        [formField]="scheduleForm.dateStart"
+      ></cdev-date-time-picker>
+      <!-- <mat-form-field>
+        <mat-label>Date Start</mat-label>
+        <input matInput type="datetime-local" [formField]="scheduleForm.dateStart" />
+      </mat-form-field> -->
+      <cdev-lib-error-message [control]="scheduleForm.dateStart()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput type="text" [formField]="scheduleForm.title" />
+      </mat-form-field>
+      <cdev-lib-error-message [control]="scheduleForm.title()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Teacher Name</mat-label>
+        <input matInput type="text" [formField]="scheduleForm.teacherName" />
+      </mat-form-field>
+      <cdev-lib-error-message [control]="scheduleForm.teacherName()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Summary</mat-label>
+        <textarea matInput [formField]="scheduleForm.summary"></textarea>
+      </mat-form-field>
+      <cdev-lib-error-message [control]="scheduleForm.summary()"></cdev-lib-error-message>
+      <mat-form-field>
+        <mat-label>Requirements</mat-label>
+        <textarea matInput [formField]="scheduleForm.requeriments"></textarea>
+      </mat-form-field>
+      <cdev-lib-error-message [control]="scheduleForm.requeriments()"></cdev-lib-error-message>
+    </div>
+    <div matDialogActions>
+      <button
+        matButton="filled"
+        type="button"
+        [disabled]="scheduleForm().invalid()"
+        (click)="action()"
+      >
+        {{ label() }}
+      </button>
+      <button matButton="outlined" type="button" mat-dialog-close>Cancel</button>
+    </div>
+  </form>
+</mat-dialog-content>

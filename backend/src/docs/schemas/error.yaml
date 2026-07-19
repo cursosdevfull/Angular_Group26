@@ -1,0 +1,10 @@
+ErrorResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["ERROR"]
+    code:
+      type: integer
+    message:
+      type: string

@@ -1,7 +1,7 @@
 import { Component, effect, Inject, inject, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
-import { Paginator, Table, Title } from 'lib';
+import { Paginator, Table, Title } from 'curso-angular-26';
 import { Course } from '../../domain';
 import { TOKEN_COURSE_APPLICATION } from '../..';
 import { PORT_COURSE_APPLICATION } from '../../domain/ports/course-application';
@@ -26,7 +26,7 @@ export class CourseList {
     { label: 'ID', field: 'id' },
     { label: 'Name', field: 'name' },
     { label: 'Description', field: 'description' },
-    { label: 'Price', field: 'price', fn: (value: any) => `USD ${value}` },
+    { label: 'Price', field: 'price', fn: (value: any) => `USD ${parseFloat(value).toFixed(2)}` },
     {
       label: 'Created At',
       field: 'createdAt',
@@ -71,7 +71,7 @@ export class CourseList {
 
   loadPage(page: number) {
     this.currentPage = page;
-    this.application.getAll.set({ page, limit: this.pageSize });
+    this.application.getAll.set({ page: page + 1, limit: this.pageSize });
   }
 
   changePage(page: number) {

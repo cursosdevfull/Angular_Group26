@@ -1,0 +1,83 @@
+Schedule:
+  type: object
+  properties:
+    id:
+      type: string
+      example: "1"
+    courseId:
+      type: string
+      example: "1"
+    dateStart:
+      type: string
+      format: date
+      example: "2025-01-15"
+    title:
+      type: string
+      example: "Horario Matutino"
+    teacherName:
+      type: string
+      example: "Juan Pérez"
+    summary:
+      type: string
+      example: "Resumen del horario"
+    requeriments:
+      type: string
+      example: "Conocimientos básicos de programación"
+
+ScheduleInput:
+  type: object
+  required:
+    - courseId
+    - dateStart
+    - title
+    - teacherName
+  properties:
+    courseId:
+      type: string
+      example: "1"
+    dateStart:
+      type: string
+      format: date
+      example: "2025-01-15"
+    title:
+      type: string
+      example: "Horario Matutino"
+    teacherName:
+      type: string
+      example: "Juan Pérez"
+    summary:
+      type: string
+      example: "Resumen del horario"
+    requeriments:
+      type: string
+      example: "Conocimientos básicos de programación"
+
+ScheduleListResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      type: array
+      items:
+        $ref: "#/components/schemas/Schedule"
+    page:
+      type: integer
+    limit:
+      type: integer
+    total:
+      type: integer
+
+ScheduleResponse:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: ["SUCCESS"]
+    code:
+      type: integer
+    data:
+      $ref: "#/components/schemas/Schedule"

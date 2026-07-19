@@ -1,0 +1,250 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: var(--mat-sys-surface);
+}
+
+/* ========== LOADING / ERROR ========== */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px 24px;
+  gap: 16px;
+  text-align: center;
+
+  .error-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    color: var(--mat-sys-error);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--mat-sys-on-surface);
+  }
+
+  p {
+    color: var(--mat-sys-on-surface-variant);
+    margin: 0;
+  }
+}
+
+/* ========== DETAIL PAGE ========== */
+.detail-page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+
+.back-link {
+  margin-bottom: 24px;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== MAIN CONTENT ========== */
+.detail-main {
+  .course-banner {
+    height: 220px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+
+    .banner-initials {
+      font-size: 5rem;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .course-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: var(--mat-sys-on-surface);
+    line-height: 1.2;
+  }
+
+  .course-tags {
+    margin-bottom: 24px;
+
+    .chip-price {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+  }
+
+  .course-description-full {
+    padding: 24px 0;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--mat-sys-on-surface);
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--mat-sys-on-surface-variant);
+      margin: 0;
+    }
+  }
+
+  .course-curriculum {
+    padding: 24px 0;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 20px;
+      color: var(--mat-sys-on-surface);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .benefit-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+
+        mat-icon {
+          flex-shrink: 0;
+        }
+
+        span {
+          font-size: 0.95rem;
+          color: var(--mat-sys-on-surface);
+        }
+      }
+    }
+  }
+}
+
+/* ========== SIDEBAR ========== */
+.detail-sidebar {
+  position: sticky;
+  top: 24px;
+
+  .sidebar-card {
+    border-radius: 16px;
+    overflow: hidden;
+
+    mat-card-content {
+      padding: 24px !important;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .price-section {
+    text-align: center;
+
+    .price-label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--mat-sys-on-surface-variant);
+      margin-bottom: 4px;
+    }
+
+    .price-value {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--mat-sys-primary);
+    }
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .cta-button-secondary {
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .course-meta {
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--mat-sys-on-surface);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+
+      mat-icon {
+        color: var(--mat-sys-on-surface-variant);
+        flex-shrink: 0;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        .meta-label {
+          font-size: 0.8rem;
+          color: var(--mat-sys-on-surface-variant);
+        }
+
+        .meta-value {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--mat-sys-on-surface);
+        }
+      }
+    }
+  }
+}
+
+/* ========== DIVIDER ========== */
+mat-divider {
+  margin: 0;
+}
