@@ -22,4 +22,4 @@ artifacts:
   name: course-angular26
   files:
     - "**/*"
-  base-directory: dist/backoffice/browser
+  base-directory: courses/dist/backoffice/browser
