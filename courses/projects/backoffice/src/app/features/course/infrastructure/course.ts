@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { PORT_COURSE_ADAPTER } from '../domain/ports/course-adapter';
 import { inject } from '@angular/core/primitives/di';
-import { environment } from '../../../../environments/environment.development';
+import { environment } from '../../../../environments/environment';
 import { RESPONSE } from '@backoffice/core/types/response';
 import { Observable } from 'rxjs';
 import { Course } from '../domain';

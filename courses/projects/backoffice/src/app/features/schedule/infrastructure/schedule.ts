@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { PORT_SCHEDULE_ADAPTER } from '../domain/ports/schedule-adapter';
 import { inject } from '@angular/core/primitives/di';
-import { environment } from '../../../../environments/environment.development';
+import { environment } from '../../../../environments/environment';
 import { RESPONSE } from '@backoffice/core/types/response';
 import { Observable } from 'rxjs';
 import { Schedule } from '../domain';
